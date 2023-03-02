@@ -5,3 +5,7 @@ editUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/text-zoom/REA
 editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/text-zoom/src/definitions.ts
 sidebar_label: Text Zoom
 ---
+
+## Coming Soon..
+
+The documentation for this page is currently being developed. Please check back again later.

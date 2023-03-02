@@ -37,7 +37,7 @@ module.exports = {
   api: [
     {
       type: 'category',
-      label: 'Overview',
+      label: 'Code',
       collapsed: false,
       items: ['code', 'featured/install-doctor', 'featured/gas-station', 'featured/jumpusb'],
     },

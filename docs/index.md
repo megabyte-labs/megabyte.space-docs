@@ -1,5 +1,5 @@
 ---
-title: Megabyte Labs Documentation
+title: Megabyte Labs Docs
 description: Overview of Megabyte Labs, the open-source collective that publishes amazing, free developer tools
 slug: /
 sidebar_label: Overview
@@ -10,6 +10,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img
   alt="Enterprise-grade open-source"
-  src={require('/img/og.png').default}
+  src={require('/img/featured/megabyte-labs.png').default}
   loading="eager"
 />
+
+## Coming Soon..
+
+The documentation for this page is currently being developed. Please check back again later.

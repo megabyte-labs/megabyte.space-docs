@@ -1,15 +1,15 @@
 ---
-title: Install Doctor
-description: An overview of Install Doctor, one of our featured projects
-sidebar_label: Install Doctor
-slug: /featured/install-doctor
+title: LinkBlink
+description: An overview of LinkBlink, one of our featured projects
+sidebar_label: LinkBlink
+slug: /featured/linkblink
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img
   alt="Enterprise-grade open-source"
-  src={require('/img/featured/install-doctor.png').default}
+  src={require('/img/featured/linkblink.png').default}
   loading="eager"
 />
 

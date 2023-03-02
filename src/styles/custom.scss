@@ -177,7 +177,7 @@ iframe {
   margin: 1rem 0 0;
 }
 
-.docSidebarContainer_src-theme-DocPage-styles-module > a > img {
+.main-wrapper > div > aside > a > img {
   position: relative;
   top: 2px;
   left: -16px;
@@ -203,5 +203,9 @@ iframe {
 }
 
 .dropdown--hoverable svg {
+  display: none;
+}
+
+.navbar-sidebar .menu__list-item svg {
   display: none;
 }
