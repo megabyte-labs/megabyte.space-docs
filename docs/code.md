@@ -1,6 +1,6 @@
 ---
 title: Repository / Code Overview
-description: Overview of the open-source GitLab and GitHub repository structure maintained by Megabyte Labs.
+description: Get a high-level overview of the open-source GitLab and GitHub repository structure maintained by Megabyte Labs.
 slug: /code
 sidebar_label: Overview
 hide_table_of_contents: true

@@ -5,26 +5,26 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from 'react';
-import clsx from 'clsx';
-import useWindowSize from '@theme/hooks/useWindowSize';
-import DocPaginator from '@theme/DocPaginator';
-import DocVersionBanner from '@theme/DocVersionBanner';
-import Seo from '@theme/Seo';
-import type {Props} from '@theme/DocItem';
-import DocItemFooter from '@theme/DocItemFooter';
-import TOC from '@theme/TOC';
-import TOCCollapsible from '@theme/TOCCollapsible';
-import {MainHeading} from '@theme/Heading';
-import styles from './styles.module.css';
-import {ThemeClassNames} from '@docusaurus/theme-common';
+import React from 'react'
+import clsx from 'clsx'
+import useWindowSize from '@theme/hooks/useWindowSize'
+import DocPaginator from '@theme/DocPaginator'
+import DocVersionBanner from '@theme/DocVersionBanner'
+import Seo from '@theme/Seo'
+import type { Props } from '@theme/DocItem'
+import DocItemFooter from '@theme/DocItemFooter'
+import TOC from '@theme/TOC'
+import TOCCollapsible from '@theme/TOCCollapsible'
+import { MainHeading } from '@theme/Heading'
+import styles from './styles.module.css'
+import { ThemeClassNames } from '@docusaurus/theme-common'
 
 // CUSTOM CODE
 import DocDemo from '@components/global/DocDemo'
 
 export default function DocItem(props: Props): JSX.Element {
-  const {content: DocContent, versionMetadata} = props;
-  const {metadata, frontMatter} = DocContent;
+  const { content: DocContent, versionMetadata } = props
+  const { metadata, frontMatter } = DocContent
   const {
     image,
     keywords,
@@ -32,36 +32,37 @@ export default function DocItem(props: Props): JSX.Element {
     hide_table_of_contents: hideTableOfContents,
     toc_min_heading_level: tocMinHeadingLevel,
     toc_max_heading_level: tocMaxHeadingLevel,
+    top_banner: topBanner,
+    top_banner_alt: topBannerAlt,
     //#region ------- CUSTOM CODE --------
     demoUrl,
     demoSourceUrl,
     //#endregion
-  } = frontMatter;
+  } = frontMatter
 
   //#region --------- CUSTOM CODE ---------
-  const { metadata: { editUrl } } = DocContent;
+  const { metadata: { editUrl } } = DocContent
   //#endregion
 
-  const {description, title} = metadata;
+  const { description, title } = metadata
 
   // We only add a title if:
   // - user asks to hide it with frontmatter
   // - the markdown content does not already contain a top-level h1 heading
   const shouldAddTitle =
-    !hideTitle && typeof DocContent.contentTitle === 'undefined';
+    !hideTitle && typeof DocContent.contentTitle === 'undefined'
 
-  const windowSize = useWindowSize();
+  const windowSize = useWindowSize()
 
   const canRenderTOC =
-    !hideTableOfContents && DocContent.toc && DocContent.toc.length > 0;
+    !hideTableOfContents && DocContent.toc && DocContent.toc.length > 0
 
   const renderTocDesktop =
-    canRenderTOC && (windowSize === 'desktop' || windowSize === 'ssr');
+    canRenderTOC && (windowSize === 'desktop' || windowSize === 'ssr')
 
   return (
     <>
-      <Seo {...{title, description, keywords, image}} />
-
+      <Seo {...{ title, description, keywords, image }} />
       <div className="row">
         <div
           className={clsx('col', {
@@ -70,6 +71,16 @@ export default function DocItem(props: Props): JSX.Element {
           <DocVersionBanner versionMetadata={versionMetadata} />
           <div className={styles.docItemContainer}>
             <article>
+              {topBanner && (
+                <div className="row page-banner">
+                  <div className="col page-banner-col">
+                    <picture>
+                      <source type="image/webp" src={topBanner.replace(/.png/gi, '.webp')} />
+                      <source type="image/png" src={topBanner} />
+                      <img src={topBanner} alt={topBannerAlt} />
+                    </picture>
+                  </div>
+                </div>)}
               {versionMetadata.badge && (
                 <span
                   className={clsx(
@@ -154,5 +165,5 @@ export default function DocItem(props: Props): JSX.Element {
 
       </div>
     </>
-  );
+  )
 }

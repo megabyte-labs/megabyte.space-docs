@@ -79,7 +79,18 @@ html[data-theme='dark'] {
   }
 
   h1 {
-    margin-block-start: 5rem;
+    margin-block-start: 3rem;
+  }
+
+  h2 {
+    margin-top: 30px;
+  }
+
+  h2:before {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4QAAAAJCAMAAABdVhKSAAAAP1BMVEUAAAARwtQe37MY0cMIsegi56oo9JsVzMgOvdka1b4Nut0h4q4k6qUTxs8c2Lon758d27cKtOMUycwm7aIMt+Hkti6zAAAAAXRSTlMAQObYZgAAAPhJREFUWMPt1duOgjAYBOBlFaEcBKTv/6w7s9tkQ2z/Cg3eON9MW43XE79EREREREREREREPtO1yHJdkvziLZ3vdmi7dp+qzDjiWB5oXnPUpbkc5hz6kru7v2DO+C7UZ9WlhnqwrYxlst2Yo0pHmOQZy5kbrMpxgpW9woINnrlCx75zg3PhBtHMBHH6U1dIK5o0MbYbesYIFyR8iAY/GDw8TbHj+Yup3WT3/yCbnZkRGDM75ArHEHarCXmYS0PjgYZNcanwspf3H3AMn6iZmfGaC8TNAL8YU4uFF25bDT0aTTD8XlZSVp6V7wpD9G8Qx8D1TWx4N8n7AUtHYDyOS/nJAAAAAElFTkSuQmCC');
+    display: block;
+    margin-bottom: 40px;
+    overflow: hidden;
   }
 
   h2 + h3,

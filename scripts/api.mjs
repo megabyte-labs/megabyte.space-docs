@@ -3,7 +3,7 @@ import fs from 'fs';
 import fetch from 'node-fetch';
 
 const API_DIR = new URL('../docs/apis/', import.meta.url);
-
+// https://gitlab.com/api/v4/groups/megabyte-labs/projects?include_subgroups=true
 // replace with latest once it's relased
 const tag = 'latest';
 

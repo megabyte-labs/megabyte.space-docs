@@ -3,15 +3,9 @@ title: JumpUSB
 description: An overview of JumpUSB, one of our featured projects
 sidebar_label: JumpUSB
 slug: /featured/jumpusb
+top_banner: /docs/img/featured/jumpusb.png
+top_banner_alt: JumpUSB banner
 ---
-
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-<img
-  alt="Enterprise-grade open-source"
-  src={require('/img/featured/jumpusb.png').default}
-  loading="eager"
-/>
 
 ## Coming Soon..
 

@@ -67,15 +67,18 @@ module.exports = {
           items: [
             {
               href: 'https://megabyte.space/blog',
-              label: 'Blog'
+              label: 'Blog',
+              target: '_self'
             },
             {
               href: 'https://megabyte.space/community',
-              label: 'Community'
+              label: 'Community',
+              target: '_self'
             },
             {
               href: 'https://megabyte.space/enterprise',
-              label: 'Enterprise'
+              label: 'Enterprise',
+              target: '_self'
             }
           ],
           className: 'navbar__link--support',

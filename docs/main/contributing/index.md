@@ -1,6 +1,6 @@
 ---
 title: Contributing
-description: An overview of how to contribute to the Install Doctor project
+description: Discover useful tips and tricks that will help you successfully contribute to projects in the Megabyte Labs eco-system.
 sidebar_label: Overview
 slug: /contributing
 ---

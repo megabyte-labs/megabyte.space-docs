@@ -177,6 +177,15 @@ iframe {
   margin: 1rem 0 0;
 }
 
+.page-banner {
+  margin: 0;
+  width: 100%;
+
+  .page-banner-col {
+    padding: 0;
+  }
+}
+
 .main-wrapper > div > aside > a > img {
   position: relative;
   top: 2px;

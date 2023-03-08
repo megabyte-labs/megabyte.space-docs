@@ -3,15 +3,9 @@ title: Install Doctor
 description: An overview of Install Doctor, one of our featured projects
 sidebar_label: Install Doctor
 slug: /featured/install-doctor
+top_banner: /docs/img/featured/install-doctor.png
+top_banner_alt: Install Doctor banner
 ---
-
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-<img
-  alt="Enterprise-grade open-source"
-  src={require('/img/featured/install-doctor.png').default}
-  loading="eager"
-/>
 
 ## Coming Soon..
 

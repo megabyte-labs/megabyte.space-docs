@@ -1,6 +1,6 @@
 ---
 title: Code Philosophy
-description: An overview of the coding philosophy adopted by Megabyte Labs
+description: An overview of the coding philosophy adopted by Megabyte Labs in order to publish rock solid code that is digestible by both humans and machines.
 sidebar_label: Overview
 slug: /philosophy
 ---

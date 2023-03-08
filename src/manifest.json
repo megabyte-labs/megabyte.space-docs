@@ -1,6 +1,6 @@
 {
-  "name": "Ionic Documentation",
-  "short_name": "Ionic Docs",
+  "name": "Megabyte Labs Documentation",
+  "short_name": "Megabyte Labs Docs",
   "start_url": "/docs/",
   "display": "standalone",
   "icons": [
@@ -10,6 +10,6 @@
       "type": "image/svg+xml"
     }
   ],
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff"
+  "background_color": "#000000",
+  "theme_color": "#000000"
 }

@@ -3,15 +3,8 @@ title: LinkBlink
 description: An overview of LinkBlink, one of our featured projects
 sidebar_label: LinkBlink
 slug: /featured/linkblink
+top_banner: /docs/img/featured/linkblink.png
 ---
-
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-<img
-  alt="Enterprise-grade open-source"
-  src={require('/img/featured/linkblink.png').default}
-  loading="eager"
-/>
 
 ## Coming Soon..
 

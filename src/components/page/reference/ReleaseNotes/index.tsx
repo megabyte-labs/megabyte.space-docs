@@ -1,18 +1,18 @@
-import clsx from 'clsx';
-import React from 'react';
-import releases from './release-notes.json';
+import clsx from 'clsx'
+import React from 'react'
+import releases from './release-notes.json'
 
-import styles from './styles.module.css';
+import styles from './styles.module.css'
 
 interface Release {
-  body: string;
-  element: string;
-  name: string;
-  published_at: string;
-  symbol: string;
-  tag_name: string;
-  type: string;
-  version: string;
+  body: string
+  element: string
+  name: string
+  published_at: string
+  symbol: string
+  tag_name: string
+  type: string
+  version: string
 }
 
 export default function ReleaseNotes(props: { [key: string]: any }) {
@@ -20,19 +20,19 @@ export default function ReleaseNotes(props: { [key: string]: any }) {
     return [
       <p>
         Unable to load Releases. Please see all releases{' '}
-        <a href="https://github.com/ionic-team/ionic/releases" target="_blank">
+        <a href="https://github.com/ionic-team/ionic/releases" target="_blank" rel="noopener">
           on GitHub
         </a>
         .
       </p>,
-    ];
+    ]
   }
 
   return (
     <article>
       <p className={styles.intro}>
         A complete release history for Ionic Framework is available{' '}
-        <a href="https://github.com/ionic-team/ionic/releases" target="_blank">
+        <a href="https://github.com/ionic-team/ionic/releases" target="_blank" rel="noopener">
           on GitHub
         </a>
         . Documentation for recent releases can also be found below.
@@ -40,7 +40,7 @@ export default function ReleaseNotes(props: { [key: string]: any }) {
 
       <p>
         See versioning for information about our{' '}
-        <a href="/docs/reference/versioning">policy and commitment to stability</a>.
+        <a href='/docs/reference/versioning'>policy and commitment to stability</a>.
       </p>
       <div className={styles['release-notes']}>
         {releases.map((release: Release, index) => (
@@ -81,18 +81,18 @@ export default function ReleaseNotes(props: { [key: string]: any }) {
       </div>
       <blockquote>
         To see more releases, visit{' '}
-        <a href="https://github.com/ionic-team/ionic/releases/" target="_blank">
+        <a href="https://github.com/ionic-team/ionic/releases/" target="_blank" rel="noopener">
           GitHub
         </a>
         .
       </blockquote>
     </article>
-  );
+  )
 }
 
 const getReleaseClasses = (release: any) => {
   return {
     'release-note': true,
     [`release-note-${release.type}`]: true,
-  };
-};
+  }
+}

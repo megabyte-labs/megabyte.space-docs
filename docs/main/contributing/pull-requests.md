@@ -1,6 +1,6 @@
 ---
 title: Pull Requests
-description: How to contribute to Megabyte Labs projects with pull requests
+description: Learn how to contribute to projects in the Megabyte Labs eco-system by opening pull requests the right way, the first time.
 sidebar_label: Pull Requests
 slug: /contributing/pull-requests
 ---
