@@ -22,6 +22,14 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Code',
+      collapsed: false,
+      items: [
+        'main/code/images-videos'
+      ]
+    },
+    {
+      type: 'category',
       label: 'Contributing',
       collapsed: false,
       items: [
