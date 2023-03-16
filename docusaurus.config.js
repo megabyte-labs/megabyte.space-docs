@@ -260,7 +260,6 @@ module.exports = {
       {
         customCss: [
           require.resolve('./node_modules/modern-normalize/modern-normalize.css'),
-          require.resolve('./node_modules/@ionic-internal/ionic-ds/dist/tokens/tokens.css'),
           require.resolve('./src/styles/custom.scss'),
         ],
       },
