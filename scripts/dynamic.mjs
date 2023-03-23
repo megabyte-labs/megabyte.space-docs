@@ -17,6 +17,10 @@ const repoUrls = [
     "group": "featured"
   },
   {
+    "repoUrl": "https://gitlab.com/megabyte-labs/jumpusb",
+    "group": "featured"
+  },
+  {
     "group": "ansible",
     "groupId": "12261670"
   },
