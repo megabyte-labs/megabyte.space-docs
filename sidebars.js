@@ -47,7 +47,7 @@ module.exports = {
       type: 'category',
       label: 'Code',
       collapsed: false,
-      items: ['code', 'featured/install-doctor', 'featured/linkblink', 'featured/jumpusb'],
+      items: ['code', 'featured/install-doctor', 'featured/linkblink', 'featured/jumpusb', 'featured/strict-lint'],
     },
     {
       type: 'category',

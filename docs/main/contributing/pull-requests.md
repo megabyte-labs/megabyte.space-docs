@@ -4,6 +4,7 @@ description: Learn how to contribute to projects in the Megabyte Labs eco-system
 sidebar_label: Pull Requests
 slug: /contributing/pull-requests
 ---
+
 Whenever you have changes that you would like to contribute to either the [Megabyte Labs site](https://github.com/megabyte-labs/megabyte.space-site), the [Megabyte Labs documentation](https://github.com/megabyte-labs/megabyte.space-docs), or any supporting repository in the [Megabyte Labs eco-system](https://gitlab.com/megabyte-labs), you will need to propose the change as a pull request either on GitHub or GitLab.
 
 ## Pull Request Branch
