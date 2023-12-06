@@ -1,9 +1,10 @@
----
+***
+
 title: Betelgeuse Theme
 description: Installs the Betelgeuse Linux theme which styles a wide variety of display managers (among other things)
-editUrl: https://gitlab.com/megabyte-labs/ansible-roles/theme/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/ansible/src/definitions.ts
-sidebar_label: Betelgeuse Theme
+editUrl: <https://gitlab.com/megabyte-labs/ansible-roles/theme/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/ansible/src/definitions.ts>
+sidebar\_label: Betelgeuse Theme
 githubUrl: 'https://github.com/megabyte-labs/ansible-theme'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/ansible-roles/theme'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: '@installdoc/ansible-theme'
 packageSlug: 'theme'
 packageVersion: '1.1.14'
 pyPiPackageName: 'theme'
----
+------------------------
 
 <div align="center">
   <center>
@@ -89,21 +90,21 @@ pyPiPackageName: 'theme'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Quick Start](#quick-start)
-- [Variables](#variables)
-  - [Variable Examples](#variable-examples)
-    - [`user_configs`](#user_configs)
-- [Supported Operating Systems](#supported-operating-systems)
-- [Dependencies](#dependencies)
-  - [Python](#python)
-  - [Galaxy Roles](#galaxy-roles)
-  - [Galaxy Collections](#galaxy-collections)
-- [Example Playbook](#example-playbook)
-  - [Real World Example](#real-world-example)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Quick Start](#quick-start)
+* [Variables](#variables)
+  * [Variable Examples](#variable-examples)
+    * [`user_configs`](#user_configs)
+* [Supported Operating Systems](#supported-operating-systems)
+* [Dependencies](#dependencies)
+  * [Python](#python)
+  * [Galaxy Roles](#galaxy-roles)
+  * [Galaxy Collections](#galaxy-collections)
+* [Example Playbook](#example-playbook)
+  * [Real World Example](#real-world-example)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -129,7 +130,7 @@ curl -sS https://install.doctor/theme | bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://install.doctor/theme?os=win'))
 ```
 
-**Important Note:** _Before running the commands above you should probably directly access the URL to make sure the code is legit. We already know it is safe but, before running any script on your computer, you should inspect it._
+**Important Note:** *Before running the commands above you should probably directly access the URL to make sure the code is legit. We already know it is safe but, before running any script on your computer, you should inspect it.*
 
 You can also check out **[Install Doctor](https://install.doctor)**. It is an app we created that can install any Ansible role with a one-liner. It has some other nifty features too like the ability to install binaries on-the-fly without requiring a password. However, if you would like to incorporate this role into an Ansible playbook (and customize settings) then please continue reading below.
 
@@ -141,7 +142,7 @@ This role contains variables that you can customize. The variables you can custo
 
 | Name                            | Default Value | Description                                                                                                                                                                                                                                                                                                                                                                                                                |
 | ------------------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| theme_slug                      | `""`          | The slug / folder name of the theme                                                                                                                                                                                                                                                                                                                                                                                        |
+| theme\_slug                      | `""`          | The slug / folder name of the theme                                                                                                                                                                                                                                                                                                                                                                                        |
 | [`user_configs`](#user_configs) | `[]`          | The `user_configs` variable is an array of objects that should, at the very least have the `username` property defined for each user with a home directory that you would like this role to install the Android SDK tools into. If the system property is set to true, then the SDK tools will not be installed to that user's home directory. You can control the installation location with the `sdk_location` variable. |
 
 ### Variable Examples
@@ -165,7 +166,7 @@ The chart below shows the operating systems that we have tested this role on. It
 | OS Family | OS Version | Status | Idempotent | Tested On |
 | --------- | ---------- | ------ | ---------- | --------- |
 
-**_What does idempotent mean?_** Idempotent means that if you run this role twice in row then there will be no changes to the system the second time around.
+***What does idempotent mean?*** Idempotent means that if you run this role twice in row then there will be no changes to the system the second time around.
 
 We spent a lot of time perfecting our CI configurations and build tools. If you are interested in learning more about how we perfected our process then you might find our [Ansible common files](https://gitlab.com/megabyte-labs/common/ansible) and [Ansible documentation](https://gitlab.com/megabyte-labs/documentation/ansible) repositories interesting. See the [CONTRIBUTING.md](docs/CONTRIBUTING.md) guide for more details.
 
@@ -211,15 +212,15 @@ Although most of our roles do not have dependencies, there are some cases where 
 
 The `requirements.yml` file contains a full list of the Ansible Galaxy dependencies required by this role (i.e. `meta/main.yml` role dependencies, helper roles, collections, etc.). For your convenience, a list of the role dependencies along with quick descriptions is below:
 
-role_dependencies
+role\_dependencies
 
 ### Galaxy Collections
 
 This role is dependent on multiple Ansible Galaxy collections. The collections along with a links to their source are listed below.
 
-- <a href="https://galaxy.ansible.com/chocolatey/chocolatey" title="chocolatey.chocolatey collection on Ansible Galaxy" target="_blank"><img alt="chocolatey.chocolatey Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-chocolatey.chocolatey-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
-- <a href="https://galaxy.ansible.com/community/general" title="community.general collection on Ansible Galaxy" target="_blank"><img alt="community.general Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-community.general-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
-- <a href="https://galaxy.ansible.com/google/cloud" title="google.cloud collection on Ansible Galaxy" target="_blank"><img alt="google.cloud Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-google.cloud-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
+* <a href="https://galaxy.ansible.com/chocolatey/chocolatey" title="chocolatey.chocolatey collection on Ansible Galaxy" target="_blank"><img alt="chocolatey.chocolatey Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-chocolatey.chocolatey-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
+* <a href="https://galaxy.ansible.com/community/general" title="community.general collection on Ansible Galaxy" target="_blank"><img alt="community.general Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-community.general-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
+* <a href="https://galaxy.ansible.com/google/cloud" title="google.cloud collection on Ansible Galaxy" target="_blank"><img alt="google.cloud Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-google.cloud-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
 
 <a href="#example-playbook" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -254,7 +255,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

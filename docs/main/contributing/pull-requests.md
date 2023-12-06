@@ -16,7 +16,7 @@ When creating a pull request, you will have to create a branch. The branch's nam
 3. Commit your changes
 4. Create a pull request branch from the local master branch by running `git checkout -b pullrequest/branch-name`
 5. Push the `pullrequest/branch-name` branch to the origin on either GitLab or GitHub by running `git push origin pullrequest/branch-name`
-6. Follow the link given by the commit message, add relevant details to the pull request message, and open the pull request from the GitHub / GitLab web UI. *Be sure to read this page in its entirety to learn about how to leverage pull request message and commit message syntax in order to automate some tasks like closing relevant issues.*
+6. Follow the link given by the commit message, add relevant details to the pull request message, and open the pull request from the GitHub / GitLab web UI. _Be sure to read this page in its entirety to learn about how to leverage pull request message and commit message syntax in order to automate some tasks like closing relevant issues._
 
 ## Commit Messages
 
@@ -51,9 +51,9 @@ On GitHub, you can crosslink commits and pull requests to issues they address or
 
 On GitLab, you can crosslink commits to issues, merge requests, and snippets by including the following in your pull request messages (i.e. the text you enter at the pull request web UI screen):
 
-* To reference an issue: #123
-* To reference a MR: !123
-* To reference a snippet $123
+- To reference an issue: #123
+- To reference a MR: !123
+- To reference a snippet $123
 
 More can be learned by sifting through [GitLab's tutorial on message formatting](https://about.gitlab.com/blog/2016/03/08/gitlab-tutorial-its-all-connected/) and [GitLab's documentation on crosslinking issues](https://docs.gitlab.com/ee/user/project/issues/crosslinking_issues.html). You will learn that you can have an issue automatically closed when the pull request is merged (as well as an issue in another repository) by using the following commit message:
 

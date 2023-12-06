@@ -1,9 +1,10 @@
----
+***
+
 title: Dockerfile
 description: Boilerplate / starting point / instructions for creating a Dockerfile
-editUrl: https://gitlab.com/megabyte-labs/templates/docker/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts
-sidebar_label: Dockerfile
+editUrl: <https://gitlab.com/megabyte-labs/templates/docker/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts>
+sidebar\_label: Dockerfile
 githubUrl: 'https://github.com/megabyte-labs/template-docker'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/templates/docker'
 ansibleGalaxyProjectId: false
@@ -12,9 +13,10 @@ packageName: '@megabytelabs/template-docker'
 packageSlug: 'template-docker'
 packageVersion: '8.11.0'
 pyPiPackageName: 'template-docker'
----
+----------------------------------
 
 {{ load:.config/docs/readme/header.md }}
+
 <div align="center">
   <a href="https://megabyte.space" title="Megabyte Labs homepage" target="_blank">
     <img alt="Homepage" src="https://img.shields.io/website?down_color=%23FF4136&down_message=Down&label=Homepage&logo=home-assistant&logoColor=white&up_color=%232ECC40&up_message=Up&url=https%3A%2F%2Fmegabyte.space&style=for-the-badge" />
@@ -66,20 +68,20 @@ pyPiPackageName: 'template-docker'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Docker Project Boilerplate Instructions](#docker-project-boilerplate-instructions)
-  - [Multi-Stage Builds](#multi-stage-builds)
-  - [DockerSlim Configuration](#dockerslim-configuration)
-  - [Building the Dockerfile](#building-the-dockerfile)
-  - [Testing the Dockerfile](#testing-the-dockerfile)
-  - [Style Guide](#style-guide)
-  - [Development Process Requirements](#development-process-requirements)
-- [Automated README and Repository Build Settings](#automated-readme-and-repository-build-settings)
-- [Requirements](#requirements)
-  - [Development Requirements](#development-requirements)
-  - [Building the Docker Container](#building-the-docker-container)
-  - [Building a Slim Container](#building-a-slim-container)
-  - [Build Tools](#build-tools)
+* [Overview](#overview)
+* [Docker Project Boilerplate Instructions](#docker-project-boilerplate-instructions)
+  * [Multi-Stage Builds](#multi-stage-builds)
+  * [DockerSlim Configuration](#dockerslim-configuration)
+  * [Building the Dockerfile](#building-the-dockerfile)
+  * [Testing the Dockerfile](#testing-the-dockerfile)
+  * [Style Guide](#style-guide)
+  * [Development Process Requirements](#development-process-requirements)
+* [Automated README and Repository Build Settings](#automated-readme-and-repository-build-settings)
+* [Requirements](#requirements)
+  * [Development Requirements](#development-requirements)
+  * [Building the Docker Container](#building-the-docker-container)
+  * [Building a Slim Container](#building-a-slim-container)
+  * [Build Tools](#build-tools)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -148,9 +150,9 @@ On top of the container-structure-test, there are a few other tests that will au
 
 1. For each folder in the `test/` folder that has a title that starts with `output-`, the `task test` command will run both the regular and slim images using the following command:
 
-```
-docker run -v "<OUTPUT_FOLDER_PATH>:/work" -w /work <DOCKER_IMAGE>:<SLIM_OR_LATEST> .
-```
+<!---->
+
+    docker run -v "<OUTPUT_FOLDER_PATH>:/work" -w /work <DOCKER_IMAGE>:<SLIM_OR_LATEST> .
 
 The task will then compare the STDOUT of each command to make sure that the output of each container matches when run under similar conditions.
 
@@ -207,14 +209,14 @@ We automate as much as possible. This allows us to create polished open source r
 
 ## Requirements
 
-- **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
+* **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
 
 ### Development Requirements
 
-- **[DockerSlim](repository.project.dockerslim)** - Used for generating compact, secure images
-- **[jq](repository.project.jq)** - Used for interacting with JSON
-- **[Node.js](repository.project.node)** (_>=14.18_) - Utilized to add development features like a pre-commit hook and maintenance tasks
-- _Many more_ requirements that are _dynamically installed_ as they are needed by our `Taskfile.yml` via our custom [go-task/task](https://github.com/go-task/task) fork named **[Bodega](https://github.com/ProfessorManhattan/Bodega)**
+* **[DockerSlim](repository.project.dockerslim)** - Used for generating compact, secure images
+* **[jq](repository.project.jq)** - Used for interacting with JSON
+* **[Node.js](repository.project.node)** (*>=14.18*) - Utilized to add development features like a pre-commit hook and maintenance tasks
+* *Many more* requirements that are *dynamically installed* as they are needed by our `Taskfile.yml` via our custom [go-task/task](https://github.com/go-task/task) fork named **[Bodega](https://github.com/ProfessorManhattan/Bodega)**
 
 If you choose to utilize the development tools provided by this project then at some point you will have to run `bash start.sh` (or `npm i` which calls `bash start.sh` after it is done). The `start.sh` script will attempt to automatically install any requirements (without sudo) that are not already present on your build system to the user's `~/.local/bin` folder. The `start.sh` script also takes care of other tasks such as generating the documentation by calling tasks defined in the `Taskfile.yml`. For more details on how the optional requirements are used and set up, check out the [CONTRIBUTING.md](https://gitlab.com/megabyte-labs/docker/app/template-docker/-/blob/master/docs/CONTRIBUTING.md) guide.
 
@@ -259,7 +261,7 @@ If you come up with an improvement, please do [open a pull request](repository.g
 
 You might notice that we have a lot of extra files considering that this repository basically boils down to a single Dockerfile. These extra files are meant to make team development easier, predictable, and enjoyable. If you have a recent version of [Node.js](repository.project.node) installed, you can get started using our build tools by running `npm i` (or by running `bash start.sh` if you do not currently have Node.js installed) in the root of this repository. After that, you can run `task --list` to see a list of the available development features. Alternatively, you can run `task --menu` to view an interactive menu that will guide you through the development process.
 
-_Note:_ We use a custom-built version of [go-task/task](https://github.com/go-task/task) so if you already have it installed then you should either replace it with our version or use a different bin name for `task`.
+*Note:* We use a custom-built version of [go-task/task](https://github.com/go-task/task) so if you already have it installed then you should either replace it with our version or use a different bin name for `task`.
 
 For more details, check out the [CONTRIBUTING.md](https://gitlab.com/megabyte-labs/docker/app/template-docker/-/blob/master/CONTRIBUTING.md) file.
 

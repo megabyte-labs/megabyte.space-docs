@@ -1,9 +1,10 @@
----
+***
+
 title: Prettier Config Sexy Mode
 description: Simplifies configuring Prettier by bundling plugins and configuring them in a single shareable configuration
-editUrl: https://gitlab.com/megabyte-labs/npm/configs/prettier-config-sexy-mode/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts
-sidebar_label: Prettier Config Sexy Mode
+editUrl: <https://gitlab.com/megabyte-labs/npm/configs/prettier-config-sexy-mode/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts>
+sidebar\_label: Prettier Config Sexy Mode
 githubUrl: 'https://github.com/megabyte-labs/prettier-config-sexy-mode'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/npm/configs/prettier-config-sexy-mode'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'prettier-config-sexy-mode'
 packageSlug: 'prettier-config'
 packageVersion: '1.1.4'
 pyPiPackageName: 'prettier-config'
----
+----------------------------------
 
 <div align="center">
   <center>
@@ -80,21 +81,21 @@ pyPiPackageName: 'prettier-config'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Requirements](#requirements)
-  - [Developer Requirements](#developer-requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Plugins](#plugins)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Requirements](#requirements)
+  * [Developer Requirements](#developer-requirements)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Plugins](#plugins)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Overview
 
-[Prettier](https://prettier.io/) is the defacto standard for formatting JavaScript, TypeScript, JSON, and YML. It rarely, if ever, causes any issues and it makes keeping your code base neater much easier. On top of that, through the use of plugins, you can also use Prettier to format PHP, Pug, Ruby, XML, Go HTML templates, `.ini` files, Java, `.properties` files, shell scripts, Solidity files, and more (listed in the [Plugins section below](#Plugins)). This configuration includes all known, well-tested Prettier plugins as well as **[prettier-plugin-package-perfection](https://github.com/ProfessorManhattan/prettier-plugin-package-perfection)** which is arguably the ultimate formatter for `package.json` files.
+[Prettier](https://prettier.io/) is the defacto standard for formatting JavaScript, TypeScript, JSON, and YML. It rarely, if ever, causes any issues and it makes keeping your code base neater much easier. On top of that, through the use of plugins, you can also use Prettier to format PHP, Pug, Ruby, XML, Go HTML templates, `.ini` files, Java, `.properties` files, shell scripts, Solidity files, and more (listed in the [Plugins section below](#plugins)). This configuration includes all known, well-tested Prettier plugins as well as **[prettier-plugin-package-perfection](https://github.com/ProfessorManhattan/prettier-plugin-package-perfection)** which is arguably the ultimate formatter for `package.json` files.
 
 <a href="#requirements" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -106,8 +107,8 @@ If you are simply including this library in your project, all you need is a rece
 
 The following versions of Node.js and Python are required for development:
 
-- **[Node.js >14.18.0](repository.project.node)**
-- **[Python >3.10.0](repository.project.python)**
+* **[Node.js >14.18.0](repository.project.node)**
+* **[Python >3.10.0](repository.project.python)**
 
 Other versions may work, but only the above versions are supported. Most development dependencies are installed automatically by our `Taskfile.yml` set-up (even Node.js and Python). Run `bash start.sh` to install **[Bodega](https://github.com/ProfessorManhattan/Bodega)** (an improved fork of [go-task](https://github.com/go-task/task)) and run the initialization sequence. The taskfiles will automatically install dependencies as they are needed, based on what development tasks you are running. For more information, check out the [CONTRIBUTING.md](https://github.com/megabyte-labs/prettier-config-sexy-mode/blob/main/docs/CONTRIBUTING.md) or simply run:
 
@@ -198,7 +199,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

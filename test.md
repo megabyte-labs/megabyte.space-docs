@@ -1,29 +1,29 @@
 ***
 
-title: Ansible Documentation
-description: Generate documentation from comments in Ansible YML files
-editUrl: <https://gitlab.com/megabyte-labs/python/cli/mod-ansible-autodoc/blob/master/docs/GUIDE.md>
-editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/python/src/definitions.ts>
-sidebar\_label: Ansible Documentation
-githubUrl: 'https://github.com/megabyte-labs/mod-ansible-autodoc'
-gitlabUrl: 'https://gitlab.com/megabyte-labs/python/cli/mod-ansible-autodoc'
+title: Python CLI Boilerplate
+description: Boilerplate/Template for Python CLI projects
+editUrl: https://gitlab.com/megabyte-labs/templates/python-cli/blob/master/docs/GUIDE.md
+editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts
+sidebar\_label: Python CLI Boilerplate
+githubUrl: 'https://github.com/megabyte-labs/template-python-cli'
+gitlabUrl: 'https://gitlab.com/megabyte-labs/templates/python-cli'
 ansibleGalaxyProjectId: false
 packageGroup: 'python'
-packageName: 'mod-ansible-autodoc'
-packageSlug: 'mod-ansible-autodoc'
-packageVersion: '1.0.0'
-pyPiPackageName: 'mod-ansible-autodoc'
---------------------------------------
+packageName: '@mblabs/template-python-cli'
+packageSlug: 'python-cli'
+packageVersion: '1.1.14'
+pyPiPackageName: 'python-cli'
+-----------------------------
 
 <div align="center">
   <center>
-    <a href="https://github.com/megabyte-labs/mod-ansible-autodoc">
-      <img width="148" height="148" alt="(Mod) Ansible Autodoc logo" src="https://gitlab.com/megabyte-labs/python/cli/mod-ansible-autodoc/-/raw/master/logo.png" />
+    <a href="https://github.com/megabyte-labs/template-python-cli">
+      <img width="148" height="148" alt="Python CLI Boilerplate logo" src="https://gitlab.com/megabyte-labs/templates/python-cli/-/raw/master/logo.png" />
     </a>
   </center>
 </div>
 <div align="center">
-  <center><h1 align="center">Python CLI: (Mod) Ansible Autodoc<i></i></h1></center>
+  <center><h1 align="center">Python CLI: The Easy, Feature-Packed, Python CLI Starter Template<i></i></h1></center>
   <center><h4 style="color: #18c3d1;">A Python CLI created by <a href="https://megabyte.space" target="_blank">Megabyte Labs</a></h4><i></i></center>
 </div>
 
@@ -31,7 +31,7 @@ pyPiPackageName: 'mod-ansible-autodoc'
   <a href="https://megabyte.space" title="Megabyte Labs homepage" target="_blank">
     <img alt="Homepage" src="https://img.shields.io/website?down_color=%23FF4136&down_message=Down&label=Homepage&logo=home-assistant&logoColor=white&up_color=%232ECC40&up_message=Up&url=https%3A%2F%2Fmegabyte.space&style=for-the-badge" />
   </a>
-  <a href="https://github.com/megabyte-labs/mod-ansible-autodoc/blob/master/docs/CONTRIBUTING.md" title="Learn about contributing" target="_blank">
+  <a href="https://github.com/megabyte-labs/template-python-cli/blob/master/docs/CONTRIBUTING.md" title="Learn about contributing" target="_blank">
     <img alt="Contributing" src="https://img.shields.io/badge/Contributing-Guide-0074D9?logo=github-sponsors&logoColor=white&style=for-the-badge" />
   </a>
   <a href="https://app.slack.com/client/T01ABCG4NK1/C01NN74H0LW/details/" title="Chat with us on Slack" target="_blank">
@@ -40,23 +40,23 @@ pyPiPackageName: 'mod-ansible-autodoc'
   <a href="https://gitter.im/megabyte-labs/community" title="Chat with the community on Gitter" target="_blank">
     <img alt="Gitter" src="https://img.shields.io/gitter/room/megabyte-labs/community?logo=gitter&logoColor=white&style=for-the-badge" />
   </a>
-  <a href="https://github.com/megabyte-labs/mod-ansible-autodoc" title="GitHub mirror" target="_blank">
+  <a href="https://github.com/megabyte-labs/template-python-cli" title="GitHub mirror" target="_blank">
     <img alt="GitHub" src="https://img.shields.io/badge/Mirror-GitHub-333333?logo=github&style=for-the-badge" />
   </a>
-  <a href="https://gitlab.com/megabyte-labs/python/cli/mod-ansible-autodoc" title="GitLab repository" target="_blank">
+  <a href="https://gitlab.com/megabyte-labs/templates/python-cli" title="GitLab repository" target="_blank">
     <img alt="GitLab" src="https://img.shields.io/badge/Repo-GitLab-fc6d26?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAHJJREFUCNdNxKENwzAQQNEfWU1ZPUF1cxR5lYxQqQMkLEsUdIxCM7PMkMgLGB6wopxkYvAeI0xdHkqXgCLL0Beiqy2CmUIdeYs+WioqVF9C6/RlZvblRNZD8etRuKe843KKkBPw2azX13r+rdvPctEaFi4NVzAN2FhJMQAAAABJRU5ErkJggg==&style=for-the-badge" />
   </a>
 </div>
 <br/>
 <div align="center">
-  <a title="Version: 1.0.0" href="https://github.com/megabyte-labs/mod-ansible-autodoc" target="_blank">
-    <img alt="Version: 1.0.0" src="https://img.shields.io/badge/version-1.0.0-blue.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACNJREFUCNdjIACY//+BEp9hhM3hAzYQwoBIAqEDYQrCZLwAAGlFKxU1nF9cAAAAAElFTkSuQmCC&cacheSeconds=2592000&style=flat-square" />
+  <a title="Version: 1.1.14" href="https://github.com/megabyte-labs/template-python-cli" target="_blank">
+    <img alt="Version: 1.1.14" src="https://img.shields.io/badge/version-1.1.14-blue.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACNJREFUCNdjIACY//+BEp9hhM3hAzYQwoBIAqEDYQrCZLwAAGlFKxU1nF9cAAAAAElFTkSuQmCC&cacheSeconds=2592000&style=flat-square" />
   </a>
-  <a title="Build status on GitLab" href="https://gitlab.com/megabyte-labs/python/cli/mod-ansible-autodoc/-/commits/master" target="_blank">
-    <img alt="GitLab build status" src="https://img.shields.io/gitlab/pipeline-status/megabyte-labs/python/cli/mod-ansible-autodoc?branch=master&label=build&logo=gitlab&style=flat-square" />
+  <a title="Build status on GitLab" href="https://gitlab.com/megabyte-labs/templates/python-cli/-/commits/master" target="_blank">
+    <img alt="GitLab build status" src="https://img.shields.io/gitlab/pipeline-status/megabyte-labs/python/cli/python-cli?branch=master&label=build&logo=gitlab&style=flat-square" />
   </a>
-  <a title="Test coverage report" href="https://gitlab.com/megabyte-labs/python/cli/mod-ansible-autodoc/-/commits/master" target="_blank">
-    <img alt="Coverage status" src="https://img.shields.io/gitlab/coverage/megabyte-labs/python/cli/mod-ansible-autodoc/master/?label=coverage&logo=pytest&style=flat-square" />
+  <a title="Test coverage report" href="https://gitlab.com/megabyte-labs/templates/python-cli/-/commits/master" target="_blank">
+    <img alt="Coverage status" src="https://img.shields.io/gitlab/coverage/megabyte-labs/python/cli/python-cli/master/?label=coverage&logo=pytest&style=flat-square" />
   </a>
   <a title="Documentation" href="https://megabyte.space/docs/python" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?logo=readthedocs&style=flat-square" />
@@ -67,78 +67,46 @@ pyPiPackageName: 'mod-ansible-autodoc'
   <a title="PyPi status" href="https://pypi.org/project/{{(if customPyPiPackageName customPyPiPackageName (append repository.prefix.github slug))}}/" target="_blank">
     <img alt="Status" src="https://img.shields.io/pypi/status/{{(if customPyPiPackageName customPyPiPackageName (append repository.prefix.github slug))}}/?label=status&logo=pypi&style=flat-square" />
   </a>
-  <a title="License: MIT" href="https://github.com/megabyte-labs/mod-ansible-autodoc/blob/master/LICENSE" target="_blank">
+  <a title="License: MIT" href="https://github.com/megabyte-labs/template-python-cli/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAHpJREFUCNdjYOD/wMDAUP+PgYHxhzwDA/MB5gMM7AwMDxj4GBgKGGQYGCyAEEgbMDDwAAWAwmk8958xpIOI5zKH2RmOyhxmZjguAiKmgIgtQOIYmFgCIp4AlaQ9OczGkJYCJEAGgI0CGwo2HmwR2Eqw5SBnNIAdBHYaAJb6KLM15W/CAAAAAElFTkSuQmCC&style=flat-square" />
   </a>
 </div>
 
-> <br/><h4 align="center">**Documentation generated from comments in Ansible YML files, tweaked for compatibility with [@appnest/readme](https://www.npmjs.com/package/@appnest/readme)**</h4><br/>
+> </br><h4 align="center">**subheader\_description**</h4></br>
 
-<!--TERMINALIZE![terminalizer_title](repository.group.python_cli/mod-ansible-autodoc* **github**: /raw/master/docs/demo.gif
+<!--TERMINALIZE![terminalizer_title](repository.group.python_cli/python-cli* **github**: /raw/master/docs/demo.gif
 * **gitlab**: /-/raw/master/docs/demo.gif)TERMINALIZE-->
 
 <a href="#table-of-contents" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Table of Contents
 
-* [Overview](#overview)
-* [Custom Titles](#custom-titles)
-* [Variables' Title Prefix, Postfix and Example Comment Prefix](#variables-title-prefix-postfix-and-example-comment-prefix)
-  * [`sdk_location`](#sdk_location----variable_fix---)
-* [Installation](#installation)
-  * [PyPi](#pypi)
-  * [Install Doctor](#install-doctor)
-  * [Homebrew](#homebrew)
-  * [Chocolatey](#chocolatey)
-  * [Binary Releases](#binary-releases)
-* [Requirements](#requirements)
-* [Contributing](#contributing)
-  * [Affiliates](#affiliates)
-* [License](#license)
+*   [Overview](#overview)
+*   [Python CLI Boilerplate Template](#python-cli-boilerplate-template)
+*   [Installation](#installation)
+    *   [PyPi](#pypi)
+    *   [Install Doctor](#install-doctor)
+    *   [Homebrew](#homebrew)
+    *   [Chocolatey](#chocolatey)
+    *   [Binary Releases](#binary-releases)
+*   [Requirements](#requirements)
+*   [Contributing](#contributing)
+    *   [Affiliates](#affiliates)
+*   [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Overview
 
-[ansible-autodoc](https://github.com/AndresBott/ansible-autodoc) is a documentation tool that generates documentation from comments in Ansible source files (i.e. YML files). **mod-ansible-autodoc** is a fork of ansible-autodoc that fixes a few issues. It also changes some of the data output formats to play nice with [@appnest/readme](https://www.npmjs.com/package/@appnest/readme).
+This repository is home to a Python CLI boilerplate. It is functional and feature-rich for advanced users. It is also simple, intuitive, and informative for Python beginners. It includes a lot of developer tools (powered by Task), useful CI configurations, and an awesome initial boilerplate codebase (special thanks to [Renny Montero](mailto:rennym19@gmail.com). This repository is kept up-to-date with the latest dependency updates and tools via GitLab CI (feel free to roam through `.config/`).
 
-<a href="#custom-titles" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
+<a href="#python-cli-boilerplate-template" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
-## Custom Titles
+## Python CLI Boilerplate Template
 
-There are 4 optional args for this, one per markdown file:
+This repository houses a starting template for Python CLI projects. It includes linting configuration, Taskfiles, and some simple boilerplate code.
 
-1. \--todo-title
-2. \--actions-title
-3. \--tags-title
-4. \--variables-title
-
-The value of an argument has to be wrapped around ''. Example:
-
-```sh
-mod-ansible-autodoc --todo-title '## IMPROVEMENTS FILE'
-```
-
-<a href="#variables-title-prefix-postfix-and-example-comment-prefix" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
-
-## Variables' Title Prefix, Postfix and Example Comment Prefix
-
-It's possible to add a prefix and/or postfix to `ansible_variables.md`'s subheaders and a prefix to the example comment. Simply run:
-
-```sh
-mod-ansible-autodoc --variable-title-prefix '###' --variable-title-postfix ' ' --variable-example-comment-prefix '##PREFIX##'
-```
-
-Then, expect something like the following:
-
-```
-### `sdk_location`
-
-yaml
-##PREFIX## Example implementation of the sdk_location variable
-sdk_location: ~/Android/Sdk
-
-```
+Find libraries we recommend including by scanning through the `pyproject.toml` file.
 
 <a href="#installation" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -192,7 +160,7 @@ choco install {{(if customPyPiPackageName customPyPiPackageName (append reposito
 
 ### Binary Releases
 
-There are also binaries (in various formats) available for download on both [GitHub](https://github.com/megabyte-labs/mod-ansible-autodoc/releases) and [GitLab](https://gitlab.com/megabyte-labs/python/cli/mod-ansible-autodoc/-/releases).
+There are also binaries (in various formats) available for download on both [GitHub](https://github.com/megabyte-labs/template-python-cli/releases) and [GitLab](https://gitlab.com/megabyte-labs/templates/python-cli/-/releases).
 
 <a href="#requirements" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -212,7 +180,7 @@ task --list
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/megabyte-labs/mod-ansible-autodoc/issues). If you would like to contribute, please take a look at the [contributing guide](https://github.com/megabyte-labs/mod-ansible-autodoc/blob/master/docs/CONTRIBUTING.md).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/megabyte-labs/template-python-cli/issues). If you would like to contribute, please take a look at the [contributing guide](https://github.com/megabyte-labs/template-python-cli/blob/master/docs/CONTRIBUTING.md).
 
 <details>
 <summary><b>Sponsorship</b></summary>
@@ -254,4 +222,4 @@ Below you will find a list of services we leverage that offer special incentives
 
 ## License
 
-Copyright © 2020-2021 [Megabyte LLC](https://megabyte.space). This project is [MIT](https://gitlab.com/megabyte-labs/python/cli/mod-ansible-autodoc/-/blob/master/LICENSE) licensed.
+Copyright © 2020-2021 [Megabyte LLC](https://megabyte.space). This project is [MIT](https://gitlab.com/megabyte-labs/templates/python-cli/-/blob/master/LICENSE) licensed.

@@ -1,9 +1,10 @@
----
+***
+
 title: Ansible Role
 description: Provides a great, cross-platform starting point for developing an Ansible role
-editUrl: https://gitlab.com/megabyte-labs/templates/ansible-role/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts
-sidebar_label: Ansible Role
+editUrl: <https://gitlab.com/megabyte-labs/templates/ansible-role/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts>
+sidebar\_label: Ansible Role
 githubUrl: 'https://github.com/megabyte-labs/template-ansible-role'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/templates/ansible-role'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: '@installdoc/template-ansible-role'
 packageSlug: 'ansible-role'
 packageVersion: '1.0.0'
 pyPiPackageName: 'ansible-role'
----
+-------------------------------
 
 <div align="center">
   <center>
@@ -89,18 +90,18 @@ pyPiPackageName: 'ansible-role'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Quick Start](#quick-start)
-- [Supported Operating Systems](#supported-operating-systems)
-- [Dependencies](#dependencies)
-  - [Python](#python)
-  - [Galaxy Roles](#galaxy-roles)
-  - [Galaxy Collections](#galaxy-collections)
-- [Example Playbook](#example-playbook)
-  - [Real World Example](#real-world-example)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Quick Start](#quick-start)
+* [Supported Operating Systems](#supported-operating-systems)
+* [Dependencies](#dependencies)
+  * [Python](#python)
+  * [Galaxy Roles](#galaxy-roles)
+  * [Galaxy Collections](#galaxy-collections)
+* [Example Playbook](#example-playbook)
+  * [Real World Example](#real-world-example)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -126,7 +127,7 @@ curl -sS https://install.doctor/ansible-role | bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://install.doctor/ansible-role?os=win'))
 ```
 
-**Important Note:** _Before running the commands above you should probably directly access the URL to make sure the code is legit. We already know it is safe but, before running any script on your computer, you should inspect it._
+**Important Note:** *Before running the commands above you should probably directly access the URL to make sure the code is legit. We already know it is safe but, before running any script on your computer, you should inspect it.*
 
 You can also check out **[Install Doctor](https://install.doctor)**. It is an app we created that can install any Ansible role with a one-liner. It has some other nifty features too like the ability to install binaries on-the-fly without requiring a password. However, if you would like to incorporate this role into an Ansible playbook (and customize settings) then please continue reading below.
 
@@ -139,7 +140,7 @@ The chart below shows the operating systems that we have tested this role on. It
 | OS Family | OS Version | Status | Idempotent | Tested On |
 | --------- | ---------- | ------ | ---------- | --------- |
 
-**_What does idempotent mean?_** Idempotent means that if you run this role twice in row then there will be no changes to the system the second time around.
+***What does idempotent mean?*** Idempotent means that if you run this role twice in row then there will be no changes to the system the second time around.
 
 We spent a lot of time perfecting our CI configurations and build tools. If you are interested in learning more about how we perfected our process then you might find our [Ansible common files](https://gitlab.com/megabyte-labs/common/ansible) and [Ansible documentation](https://gitlab.com/megabyte-labs/documentation/ansible) repositories interesting. See the [CONTRIBUTING.md](docs/CONTRIBUTING.md) guide for more details.
 
@@ -185,15 +186,15 @@ Although most of our roles do not have dependencies, there are some cases where 
 
 The `requirements.yml` file contains a full list of the Ansible Galaxy dependencies required by this role (i.e. `meta/main.yml` role dependencies, helper roles, collections, etc.). For your convenience, a list of the role dependencies along with quick descriptions is below:
 
-role_dependencies
+role\_dependencies
 
 ### Galaxy Collections
 
 This role is dependent on multiple Ansible Galaxy collections. The collections along with a links to their source are listed below.
 
-- <a href="https://galaxy.ansible.com/community/crypto" title="community.crypto collection on Ansible Galaxy" target="_blank"><img alt="community.crypto Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-community.crypto-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
-- <a href="https://galaxy.ansible.com/community/general" title="community.general collection on Ansible Galaxy" target="_blank"><img alt="community.general Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-community.general-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
-- <a href="https://galaxy.ansible.com/google/cloud" title="google.cloud collection on Ansible Galaxy" target="_blank"><img alt="google.cloud Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-google.cloud-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
+* <a href="https://galaxy.ansible.com/community/crypto" title="community.crypto collection on Ansible Galaxy" target="_blank"><img alt="community.crypto Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-community.crypto-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
+* <a href="https://galaxy.ansible.com/community/general" title="community.general collection on Ansible Galaxy" target="_blank"><img alt="community.general Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-community.general-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
+* <a href="https://galaxy.ansible.com/google/cloud" title="google.cloud collection on Ansible Galaxy" target="_blank"><img alt="google.cloud Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-google.cloud-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
 
 <a href="#example-playbook" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -228,7 +229,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

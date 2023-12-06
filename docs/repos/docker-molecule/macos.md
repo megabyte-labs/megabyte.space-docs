@@ -1,9 +1,10 @@
----
+***
+
 title: macOS
 description: A Dockerfile project that builds a macOS container intended for use with Ansible Molecule tests
-editUrl: https://gitlab.com/megabyte-labs/docker/ansible-molecule/macos/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/docker-molecule/src/definitions.ts
-sidebar_label: macOS
+editUrl: <https://gitlab.com/megabyte-labs/docker/ansible-molecule/macos/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/docker-molecule/src/definitions.ts>
+sidebar\_label: macOS
 githubUrl: false
 gitlabUrl: false
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'ansible-molecule-macos'
 packageSlug: false
 packageVersion: '0.0.1'
 pyPiPackageName: false
----
+----------------------
 
 <h1>Dockerfile: macOS for Ansible Molecule</h1>
 
@@ -46,18 +47,17 @@ pyPiPackageName: false
 
 > <br/>**A Dockerfile project that builds a macOS container intended for use with Ansible Molecule tests**<br/><br/>
 
-
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#table-of-contents)
 
 ## ➤ Table of Contents
 
 * [➤ Overview](#-overview)
 * [➤ Requirements](#-requirements)
-	* [Optional Requirements](#optional-requirements)
+  * [Optional Requirements](#optional-requirements)
 * [➤ Example Usage](#-example-usage)
-	* [Building the Docker Container](#building-the-docker-container)
-	* [Build Tools](#build-tools)
-	* [Integrating with Ansible Molecule](#integrating-with-ansible-molecule)
+  * [Building the Docker Container](#building-the-docker-container)
+  * [Build Tools](#build-tools)
+  * [Integrating with Ansible Molecule](#integrating-with-ansible-molecule)
 * [➤ Contributing](#-contributing)
 * [➤ License](#-license)
 
@@ -66,7 +66,6 @@ pyPiPackageName: false
 ## ➤ Overview
 
 [Ansible Molecule](https://molecule.readthedocs.io/en/latest/) testing is a critical part of creating Ansible roles that are meant for public consumption. Nearly all of [our Ansible roles](https://gitlab.com/megabyte-labs/ansible-roles) support Archlinux, Debian, Fedora, CentOS, Ubuntu, Mac OS X, and Windows. On top of that, we have hundreds of roles to maintain. In order to alleviate the headache that comes with supporting so many operating systems and so many roles, we utilize several test methods which are all powered by Ansible Molecule. In particular, we use this image to test macOS using GitLab CI and Docker. GitLab CI and Docker are free so it was a no-brainer for us. It allows us to spot some bugs before the code is available publicly. Granted, we do use other tests that are compatible with Mac OS X/Windows and better simulate potential install environments. Still, this repository is a great first line of defense when it comes to preventing regressions on supported Linux environments.
-
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#requirements)
 
@@ -81,28 +80,23 @@ pyPiPackageName: false
 
 For more details on how the Optional Requirements are used, check out the [CONTRIBUTING.md](https://gitlab.com/megabyte-labs/dockerfile/ansible-molecule/macos/-/blob/master/CONTRIBUTING.md) guide.
 
-
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#example-usage)
 
 ## ➤ Example Usage
 
 Without having to clone this repository, you can pull the latest Dockerfile to have the image cached locally by running:
 
-```
-docker pull megabytelabs/ansible-molecule-macos:latest
-```
+    docker pull megabytelabs/ansible-molecule-macos:latest
 
 ### Building the Docker Container
 
 You can modify this Dockerfile to suit your purposes. After you make changes to the Dockerfile, you can upload your custom container to [Docker Hub](https://hub.docker.com/) using the following code:
 
-```
-docker login -u "DOCKERHUB_USERNAME" -p "DOCKERHUB_PASSWORD" docker.io
-docker build --pull -t "DOCKERHUB_USERNAME/ansible-molecule-macos:latest" .
-docker push "DOCKERHUB_USERNAME/ansible-molecule-macos:latest"
-```
+    docker login -u "DOCKERHUB_USERNAME" -p "DOCKERHUB_PASSWORD" docker.io
+    docker build --pull -t "DOCKERHUB_USERNAME/ansible-molecule-macos:latest" .
+    docker push "DOCKERHUB_USERNAME/ansible-molecule-macos:latest"
 
-Replace DOCKERHUB_USERNAME and DOCKERHUB_PASSWORD in the snippet above with your Docker Hub username and password. The commands will build the Docker image and upload it to Docker Hub. You can see this logic being implemented as a [GitLab CI task here](https://gitlab.com/megabyte-labs/ci/gitlab-ci-templates/-/blob/master/dockerhub.gitlab-ci.yml). This GitLab CI task works in conjunction with the `.gitlab-ci.yml` file in the root of this repository.
+Replace DOCKERHUB\_USERNAME and DOCKERHUB\_PASSWORD in the snippet above with your Docker Hub username and password. The commands will build the Docker image and upload it to Docker Hub. You can see this logic being implemented as a [GitLab CI task here](https://gitlab.com/megabyte-labs/ci/gitlab-ci-templates/-/blob/master/dockerhub.gitlab-ci.yml). This GitLab CI task works in conjunction with the `.gitlab-ci.yml` file in the root of this repository.
 
 ### Build Tools
 
@@ -126,7 +120,7 @@ driver:
 platforms:
   - name: MyMoleculePlatform
     image: megabytelabs/ansible-molecule-macos:latest
-    command: ""
+    command: ''
     tmpfs:
       - /run
       - /tmp
@@ -163,7 +157,6 @@ scenario:
 
 If you are getting started with Ansible or Molecule, then you might find the information in the Android Studio role's [README.md](https://gitlab.com/megabyte-labs/ansible-roles/androidstudio/-/blob/master/README.md) and [CONTRIBUTING.md](https://gitlab.com/megabyte-labs/ansible-roles/androidstudio/-/blob/master/CONTRIBUTING.md) helpful. Also, if you are interested in seeing our flagship Ansible product (which is an Ansible playbook intended to provision development-oriented desktops and production-quality servers), then please check out [ProfessorManhattan's Playbooks](https://gitlab.com/ProfessorManhattan/Playbooks).
 
-
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#contributing)
 
 ## ➤ Contributing
@@ -179,6 +172,7 @@ I create open source projects out of love. Although I have a job, shelter, and a
 <br/><br/>Sincerely,<br/><br/>
 
 ***Brian Zalewski***<br/><br/>
+
 </blockquote>
 
 <a href="https://www.patreon.com/ProfessorManhattan">
@@ -186,7 +180,6 @@ I create open source projects out of love. Although I have a job, shelter, and a
 </a>
 
 </details>
-
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#license)
 

@@ -1,9 +1,10 @@
----
+***
+
 title: Node.js App
 description: A boilerplate / instructions / tips for creating Node.js apps
-editUrl: https://gitlab.com/megabyte-labs/templates/nodejs-app/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts
-sidebar_label: Node.js App
+editUrl: <https://gitlab.com/megabyte-labs/templates/nodejs-app/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts>
+sidebar\_label: Node.js App
 githubUrl: 'https://github.com/megabyte-labs/template-nodejs-app'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/templates/nodejs-app'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: '@mblabs/app-nodejs-app'
 packageSlug: 'nodejs-app'
 packageVersion: '0.0.1'
 pyPiPackageName: 'nodejs-app'
----
+-----------------------------
 
 <div align="center">
   <center>
@@ -80,18 +81,18 @@ pyPiPackageName: 'nodejs-app'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Requirements](#requirements)
-  - [Developer Requirements](#developer-requirements)
-- [Node.js App Requirements](#nodejs-app-requirements)
-  - [Test-Driven Development](#test-driven-development)
-  - [Development Tools](#development-tools)
-  - [Unit Tests vs. E2E Tests](#unit-tests-vs-e2e-tests)
-  - [Serverless vs. Docker](#serverless-vs-docker)
-  - [Smoke Testing](#smoke-testing)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Requirements](#requirements)
+  * [Developer Requirements](#developer-requirements)
+* [Node.js App Requirements](#nodejs-app-requirements)
+  * [Test-Driven Development](#test-driven-development)
+  * [Development Tools](#development-tools)
+  * [Unit Tests vs. E2E Tests](#unit-tests-vs-e2e-tests)
+  * [Serverless vs. Docker](#serverless-vs-docker)
+  * [Smoke Testing](#smoke-testing)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -109,8 +110,8 @@ If you are simply including this library in your project, all you need is a rece
 
 The following versions of Node.js and Python are required for development:
 
-- **[Node.js >14.18.0](repository.project.node)**
-- **[Python >3.10.0](repository.project.python)**
+* **[Node.js >14.18.0](repository.project.node)**
+* **[Python >3.10.0](repository.project.python)**
 
 Other versions may work, but only the above versions are supported. Most development dependencies are installed automatically by our `Taskfile.yml` set-up (even Node.js and Python). Run `bash start.sh` to install **[Bodega](https://github.com/ProfessorManhattan/Bodega)** (an improved fork of [go-task](https://github.com/go-task/task)) and run the initialization sequence. The taskfiles will automatically install dependencies as they are needed, based on what development tasks you are running. For more information, check out the [CONTRIBUTING.md](https://github.com/megabyte-labs/template-nodejs-app/blob/main/docs/CONTRIBUTING.md) or simply run:
 
@@ -150,9 +151,9 @@ Some applications will not be able to be run in serverless environments. In thes
 
 Regardless of where we plan to run the code, you should verse yourself with the specifics of the intended environment. 95% of the plan, we intend to stick with CloudFlare workers, Firebase, or Google Cloud Run. All of these platforms are stellar services worth getting to know.
 
-- CloudFlare workers are hosted on edge servers in serverless environments that have no cold-start time because they use the V8 engine (like a browser) instead of a full-fledged Node.js environment like traditional serverless solutions. This makes them incredibly fast. In fact, there is a 50ms CPU execution cap which just goes to show you how fast they are intended to be.
-- Firebase Functions are also incredibly awesome because they integrate tightly with Firebase's other offerings like Firebase Firestore which is a hosted real-time database with tight integration with a whole suite of tools geared towards app development.
-- Google Cloud Run is the newest offering. The service basically allows you to package any application into a Dockerfile and then automatically scale.
+* CloudFlare workers are hosted on edge servers in serverless environments that have no cold-start time because they use the V8 engine (like a browser) instead of a full-fledged Node.js environment like traditional serverless solutions. This makes them incredibly fast. In fact, there is a 50ms CPU execution cap which just goes to show you how fast they are intended to be.
+* Firebase Functions are also incredibly awesome because they integrate tightly with Firebase's other offerings like Firebase Firestore which is a hosted real-time database with tight integration with a whole suite of tools geared towards app development.
+* Google Cloud Run is the newest offering. The service basically allows you to package any application into a Dockerfile and then automatically scale.
 
 All of these solutions are the best because you only have to pay for what you use. And most of them offer a pretty high amount of free requests to work with. CloudFlare workers offers 100k free requests per day.
 
@@ -175,7 +176,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

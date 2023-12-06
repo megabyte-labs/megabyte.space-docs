@@ -1,9 +1,10 @@
----
+***
+
 title: Docker
 description: Installs Docker on nearly any platform
-editUrl: https://gitlab.com/megabyte-labs/ansible-roles/docker/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/ansible/src/definitions.ts
-sidebar_label: Docker
+editUrl: <https://gitlab.com/megabyte-labs/ansible-roles/docker/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/ansible/src/definitions.ts>
+sidebar\_label: Docker
 githubUrl: 'https://github.com/megabyte-labs/ansible-docker'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/ansible-roles/docker'
 ansibleGalaxyProjectId: '58202'
@@ -12,7 +13,7 @@ packageName: '@installdoc/ansible-docker'
 packageSlug: 'docker'
 packageVersion: '1.0.0'
 pyPiPackageName: 'docker'
----
+-------------------------
 
 <div align="center">
   <center>
@@ -89,24 +90,24 @@ pyPiPackageName: 'docker'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Quick Start](#quick-start)
-- [Variables](#variables)
-  - [Variable Examples](#variable-examples)
-    - [`docker_edition`](#docker_edition)
-    - [`docker_users`](#docker_users)
-- [Supported Operating Systems](#supported-operating-systems)
-- [Dependencies](#dependencies)
-  - [Python](#python)
-  - [Galaxy Roles](#galaxy-roles)
-  - [Galaxy Collections](#galaxy-collections)
-- [Example Playbook](#example-playbook)
-  - [Real World Example](#real-world-example)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-  - [TODO](#todo)
-- [License](#license)
+* [Overview](#overview)
+* [Features](#features)
+* [Quick Start](#quick-start)
+* [Variables](#variables)
+  * [Variable Examples](#variable-examples)
+    * [`docker_edition`](#docker_edition)
+    * [`docker_users`](#docker_users)
+* [Supported Operating Systems](#supported-operating-systems)
+* [Dependencies](#dependencies)
+  * [Python](#python)
+  * [Galaxy Roles](#galaxy-roles)
+  * [Galaxy Collections](#galaxy-collections)
+* [Example Playbook](#example-playbook)
+  * [Real World Example](#real-world-example)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+  * [TODO](#todo)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -120,23 +121,23 @@ This repository is the home of an [Ansible](https://www.ansible.com/) role that 
 
 **Installs docker-compose:**
 
-- Both Mac OS X and Windows install Docker Desktop which includes Docker Compose as well as Notary, Kubernetes, and Credential Helper.
-- Installs docker-compose if the `docker_install_compose` variable is set to true. docker-compose allows you to configure Docker containers in groups.
+* Both Mac OS X and Windows install Docker Desktop which includes Docker Compose as well as Notary, Kubernetes, and Credential Helper.
+* Installs docker-compose if the `docker_install_compose` variable is set to true. docker-compose allows you to configure Docker containers in groups.
 
 **Ensures Docker is installed:**
 
-- Installs Docker on the target machine.
-- Ensures Docker is started on boot.
-- If the target Docker host is a Linux machine and the `docker_snap_install` variable is set to true, then Docker will be installed as a snap package.
+* Installs Docker on the target machine.
+* Ensures Docker is started on boot.
+* If the target Docker host is a Linux machine and the `docker_snap_install` variable is set to true, then Docker will be installed as a snap package.
 
 **Adds specified users to docker group:**
 
-- If the variable `docker_users` is set to an array of usernames then those users will be added to the docker group which allows them access to Docker.
+* If the variable `docker_users` is set to an array of usernames then those users will be added to the docker group which allows them access to Docker.
 
 **Generates TLS certificates:**
 
-- Generates TLS/HTTPS certificates so that the Docker host can be controlled remotely. This is useful if you are using a centralized method of controlling all of your Docker hosts (like Portainer). This step only runs if the `docker_tls` variable is set to true.
-- The certificates required for connecting to the Docker host are copied to the Ansible host's `~/.docker` folder.
+* Generates TLS/HTTPS certificates so that the Docker host can be controlled remotely. This is useful if you are using a centralized method of controlling all of your Docker hosts (like Portainer). This step only runs if the `docker_tls` variable is set to true.
+* The certificates required for connecting to the Docker host are copied to the Ansible host's `~/.docker` folder.
 
 <a href="#quick-start" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -156,7 +157,7 @@ curl -sS https://install.doctor/docker | bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://install.doctor/docker?os=win'))
 ```
 
-**Important Note:** _Before running the commands above you should probably directly access the URL to make sure the code is legit. We already know it is safe but, before running any script on your computer, you should inspect it._
+**Important Note:** *Before running the commands above you should probably directly access the URL to make sure the code is legit. We already know it is safe but, before running any script on your computer, you should inspect it.*
 
 You can also check out **[Install Doctor](https://install.doctor)**. It is an app we created that can install any Ansible role with a one-liner. It has some other nifty features too like the ability to install binaries on-the-fly without requiring a password. However, if you would like to incorporate this role into an Ansible playbook (and customize settings) then please continue reading below.
 
@@ -169,29 +170,29 @@ This role contains variables that you can customize. The variables you can custo
 | Name                                | Default Value                                                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ----------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Docker                              | `Heyooo`                                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| docker_apt_arch                     | `amd64`                                                                       | The processor architecture to use (Debian/Ubuntu only)                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| docker_apt_gpg_key                  | `"https://download.docker.com/linux/{{ ansible_distribution \| lower }}/gpg"` | The URL of the apt repository's GPG key (Debian/Ubuntu only)                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| docker_apt_ignore_key_error         | `true`                                                                        | Whether or not to ignore errors when adding the apt repository's GPG key (Debian/Ubuntu only)                                                                                                                                                                                                                                                                                                                                                                                             |
-| docker_apt_release_channel          | `stable`                                                                      | The release channel to use on Debian/Ubuntu. You can set the value of this variable to either `stable` or `edge`.                                                                                                                                                                                                                                                                                                                                                                         |
-| docker_apt_repository               | `See defaults/main.yml`                                                       | The apt repository to use (Debian/Ubuntu only)                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| docker_compose_path                 | `/usr/local/bin/docker                                                        | compose`- The target destination of the`docker-compose` binary that will be installed                                                                                                                                                                                                                                                                                                                                                                                                     |
+| docker\_apt\_arch                     | `amd64`                                                                       | The processor architecture to use (Debian/Ubuntu only)                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| docker\_apt\_gpg\_key                  | `"https://download.docker.com/linux/{{ ansible_distribution \| lower }}/gpg"` | The URL of the apt repository's GPG key (Debian/Ubuntu only)                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| docker\_apt\_ignore\_key\_error         | `true`                                                                        | Whether or not to ignore errors when adding the apt repository's GPG key (Debian/Ubuntu only)                                                                                                                                                                                                                                                                                                                                                                                             |
+| docker\_apt\_release\_channel          | `stable`                                                                      | The release channel to use on Debian/Ubuntu. You can set the value of this variable to either `stable` or `edge`.                                                                                                                                                                                                                                                                                                                                                                         |
+| docker\_apt\_repository               | `See defaults/main.yml`                                                       | The apt repository to use (Debian/Ubuntu only)                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| docker\_compose\_path                 | `/usr/local/bin/docker                                                        | compose`- The target destination of the`docker-compose` binary that will be installed                                                                                                                                                                                                                                                                                                                                                                                                     |
 | [`docker_edition`](#docker_edition) | `ce`                                                                          | Edition can be either `ce` (Community Edition) or `ee` (Enterprise Edition).                                                                                                                                                                                                                                                                                                                                                                                                              |
-| docker_install_compose              | `true`                                                                        | Whether or not to install `docker-compose`                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| docker_no_plugins                   | `false`                                                                       | Should the below Docker plugins be installed? Fast container image distribution plugin with lazy pulling - https://github.com/containerd/stargz-snapshotter A Docker volume plugin, managing persistent container volumes - https://github.com/rancher/convoy Docker Client Plugins Manager - build new plugins, publish them on Docker Hub - https://github.com/lukaszlach/clip                                                                                                          |
-| docker_package                      | `docker                                                                       | {{ docker_edition }}` - The name of the Docker package to install                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| docker_restart_handler_state        | `restarted`                                                                   | The state that the Docker service should assume when a restart event is triggered                                                                                                                                                                                                                                                                                                                                                                                                         |
-| docker_snap_install                 | `false`                                                                       | Whether or not to use snap to install Docker - you can use this if there are issues with your configuration. Certificates (used by Portainer, for instance) will not be generated for a snap install. More information about the certificates is detailed below.                                                                                                                                                                                                                          |
-| docker_tls                          | `true`                                                                        | When set to true, the role will configure Docker for TLS network connections and generate the required certificates. The certificates will be stored in `/etc/ssl/docker` on the client and in the `~/.docker` folder on the host. To reiterate, after each client machine installs Docker and generates certificates, the certificates are copied to the Ansible host machine. You can then use these certificates to connect to Docker daemons remotely (with Portainer, for instance). |
-| docker_tls_country                  | `US`                                                                          | The country to use when configuring TLS                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| docker_tls_division                 | `Megabyte Labs`                                                               | The division to use when configuring TLS                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| docker_tls_fqdn                     | `{{ fqdn \| default('machine.example.com') }}`                                | The FQDN to use when configuring TLS - this should be set to the FQDN of the Docker host that's being configured                                                                                                                                                                                                                                                                                                                                                                          |
-| docker_tls_locality                 | `The Hood`                                                                    | The locality to use when configuring TLS                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| docker_tls_organization             | `Megabyte LLC`                                                                | The organization to use when configuring TLS                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| docker_tls_state                    | `New Jersey`                                                                  | The state to use when configuring TLS                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| docker\_install\_compose              | `true`                                                                        | Whether or not to install `docker-compose`                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| docker\_no\_plugins                   | `false`                                                                       | Should the below Docker plugins be installed? Fast container image distribution plugin with lazy pulling - <https://github.com/containerd/stargz-snapshotter> A Docker volume plugin, managing persistent container volumes - <https://github.com/rancher/convoy> Docker Client Plugins Manager - build new plugins, publish them on Docker Hub - <https://github.com/lukaszlach/clip>                                                                                                          |
+| docker\_package                      | `docker                                                                       | {{ docker_edition }}` - The name of the Docker package to install                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| docker\_restart\_handler\_state        | `restarted`                                                                   | The state that the Docker service should assume when a restart event is triggered                                                                                                                                                                                                                                                                                                                                                                                                         |
+| docker\_snap\_install                 | `false`                                                                       | Whether or not to use snap to install Docker - you can use this if there are issues with your configuration. Certificates (used by Portainer, for instance) will not be generated for a snap install. More information about the certificates is detailed below.                                                                                                                                                                                                                          |
+| docker\_tls                          | `true`                                                                        | When set to true, the role will configure Docker for TLS network connections and generate the required certificates. The certificates will be stored in `/etc/ssl/docker` on the client and in the `~/.docker` folder on the host. To reiterate, after each client machine installs Docker and generates certificates, the certificates are copied to the Ansible host machine. You can then use these certificates to connect to Docker daemons remotely (with Portainer, for instance). |
+| docker\_tls\_country                  | `US`                                                                          | The country to use when configuring TLS                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| docker\_tls\_division                 | `Megabyte Labs`                                                               | The division to use when configuring TLS                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| docker\_tls\_fqdn                     | `{{ fqdn \| default('machine.example.com') }}`                                | The FQDN to use when configuring TLS - this should be set to the FQDN of the Docker host that's being configured                                                                                                                                                                                                                                                                                                                                                                          |
+| docker\_tls\_locality                 | `The Hood`                                                                    | The locality to use when configuring TLS                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| docker\_tls\_organization             | `Megabyte LLC`                                                                | The organization to use when configuring TLS                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| docker\_tls\_state                    | `New Jersey`                                                                  | The state to use when configuring TLS                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | [`docker_users`](#docker_users)     | `[]`                                                                          | A list of users to add to the docker group                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| docker_yum_gpg_key                  | `https://download.docker.com/linux/centos/gpg`                                | The URL of the GPG key to validate against when downloading from the specified yum repository                                                                                                                                                                                                                                                                                                                                                                                             |
-| docker_yum_repo_url                 | `See defaults/main.yml`                                                       | The yum repository URL to retrieve the installation packages (CentOS/Fedora/RedHat only)                                                                                                                                                                                                                                                                                                                                                                                                  |
-| https_repository_prefix             | `https://`                                                                    | Allows you to customize what the apt repository URL starts with. This is useful if you are using something like apt-cacher-ng as a proxy cache which requires the URL to start with http://HTTPS/. (Debian/Ubuntu only)                                                                                                                                                                                                                                                                   |
+| docker\_yum\_gpg\_key                  | `https://download.docker.com/linux/centos/gpg`                                | The URL of the GPG key to validate against when downloading from the specified yum repository                                                                                                                                                                                                                                                                                                                                                                                             |
+| docker\_yum\_repo\_url                 | `See defaults/main.yml`                                                       | The yum repository URL to retrieve the installation packages (CentOS/Fedora/RedHat only)                                                                                                                                                                                                                                                                                                                                                                                                  |
+| https\_repository\_prefix             | `https://`                                                                    | Allows you to customize what the apt repository URL starts with. This is useful if you are using something like apt-cacher-ng as a proxy cache which requires the URL to start with <http://HTTPS/>. (Debian/Ubuntu only)                                                                                                                                                                                                                                                                   |
 
 ### Variable Examples
 
@@ -223,7 +224,7 @@ The chart below shows the operating systems that we have tested this role on. It
 | OS Family | OS Version | Status | Idempotent | Tested On |
 | --------- | ---------- | ------ | ---------- | --------- |
 
-**_What does idempotent mean?_** Idempotent means that if you run this role twice in row then there will be no changes to the system the second time around.
+***What does idempotent mean?*** Idempotent means that if you run this role twice in row then there will be no changes to the system the second time around.
 
 We spent a lot of time perfecting our CI configurations and build tools. If you are interested in learning more about how we perfected our process then you might find our [Ansible common files](https://gitlab.com/megabyte-labs/common/ansible) and [Ansible documentation](https://gitlab.com/megabyte-labs/documentation/ansible) repositories interesting. See the [CONTRIBUTING.md](docs/CONTRIBUTING.md) guide for more details.
 
@@ -269,15 +270,15 @@ Although most of our roles do not have dependencies, there are some cases where 
 
 The `requirements.yml` file contains a full list of the Ansible Galaxy dependencies required by this role (i.e. `meta/main.yml` role dependencies, helper roles, collections, etc.). For your convenience, a list of the role dependencies along with quick descriptions is below:
 
-role_dependencies
+role\_dependencies
 
 ### Galaxy Collections
 
 This role is dependent on multiple Ansible Galaxy collections. The collections along with a links to their source are listed below.
 
-- <a href="https://galaxy.ansible.com/chocolatey/chocolatey" title="chocolatey.chocolatey collection on Ansible Galaxy" target="_blank"><img alt="chocolatey.chocolatey Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-chocolatey.chocolatey-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
-- <a href="https://galaxy.ansible.com/community/general" title="community.general collection on Ansible Galaxy" target="_blank"><img alt="community.general Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-community.general-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
-- <a href="https://galaxy.ansible.com/google/cloud" title="google.cloud collection on Ansible Galaxy" target="_blank"><img alt="google.cloud Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-google.cloud-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
+* <a href="https://galaxy.ansible.com/chocolatey/chocolatey" title="chocolatey.chocolatey collection on Ansible Galaxy" target="_blank"><img alt="chocolatey.chocolatey Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-chocolatey.chocolatey-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
+* <a href="https://galaxy.ansible.com/community/general" title="community.general collection on Ansible Galaxy" target="_blank"><img alt="community.general Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-community.general-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
+* <a href="https://galaxy.ansible.com/google/cloud" title="google.cloud collection on Ansible Galaxy" target="_blank"><img alt="google.cloud Ansible Galaxy badge" src="https://img.shields.io/badge/Ansible%20Galaxy-google.cloud-000000?logo=ansible&logoColor=white&style=for-the-badge"></a>
 
 <a href="#example-playbook" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -312,7 +313,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 
@@ -341,8 +342,8 @@ Below you will find a list of services we leverage that offer special incentives
 
 ### TODO
 
-- **Improvement:** Complete documentation
-- **Test:** Complete
+* **Improvement:** Complete documentation
+* **Test:** Complete
 
 <a href="#license" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 

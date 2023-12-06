@@ -1,9 +1,10 @@
----
+***
+
 title: Docker Compose
 description: Starting point / instructions for creating a Docker Compose / Stack repository
-editUrl: https://gitlab.com/megabyte-labs/templates/docker-compose/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts
-sidebar_label: Docker Compose
+editUrl: <https://gitlab.com/megabyte-labs/templates/docker-compose/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts>
+sidebar\_label: Docker Compose
 githubUrl: 'https://github.com/megabyte-labs/template-docker-compose'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/templates/docker-compose'
 ansibleGalaxyProjectId: false
@@ -12,9 +13,10 @@ packageName: '@megabytelabs/template-docker-compose'
 packageSlug: 'template-docker-compose'
 packageVersion: '8.11.0'
 pyPiPackageName: 'template-docker-compose'
----
+------------------------------------------
 
 {{ load:.config/docs/readme/header.md }}
+
 <div align="center">
   <a href="https://megabyte.space" title="Megabyte Labs homepage" target="_blank">
     <img alt="Homepage" src="https://img.shields.io/website?down_color=%23FF4136&down_message=Down&label=Homepage&logo=home-assistant&logoColor=white&up_color=%232ECC40&up_message=Up&url=https%3A%2F%2Fmegabyte.space&style=for-the-badge" />
@@ -66,16 +68,16 @@ pyPiPackageName: 'template-docker-compose'
 
 ## Table of Contents
 
-- [Docker-Compose Project](#docker-compose-project)
-- [Requirements](#requirements)
-  - [Development Requirements](#development-requirements)
-- [Docker Compose / Stack Project](#docker-compose--stack-project)
-  - [Docker Containers](#docker-containers)
-  - [Configuration Management](#configuration-management)
-  - [Re-Building the Repository](#re-building-the-repository)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Docker-Compose Project](#docker-compose-project)
+* [Requirements](#requirements)
+  * [Development Requirements](#development-requirements)
+* [Docker Compose / Stack Project](#docker-compose--stack-project)
+  * [Docker Containers](#docker-containers)
+  * [Configuration Management](#configuration-management)
+  * [Re-Building the Repository](#re-building-the-repository)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#docker-compose-project" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -87,14 +89,14 @@ This is a Docker Compose / Swarm project.
 
 ## Requirements
 
-- **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
+* **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
 
 ### Development Requirements
 
-- **[DockerSlim](repository.project.dockerslim)** - Used for generating compact, secure images
-- **[jq](repository.project.jq)** - Used for interacting with JSON
-- **[Node.js](repository.project.node)** (_>=14.18_) - Utilized to add development features like a pre-commit hook and maintenance tasks
-- _Many more_ requirements that are _dynamically installed_ as they are needed by our `Taskfile.yml` via our custom [go-task/task](https://github.com/go-task/task) fork named **[Bodega](https://github.com/ProfessorManhattan/Bodega)**
+* **[DockerSlim](repository.project.dockerslim)** - Used for generating compact, secure images
+* **[jq](repository.project.jq)** - Used for interacting with JSON
+* **[Node.js](repository.project.node)** (*>=14.18*) - Utilized to add development features like a pre-commit hook and maintenance tasks
+* *Many more* requirements that are *dynamically installed* as they are needed by our `Taskfile.yml` via our custom [go-task/task](https://github.com/go-task/task) fork named **[Bodega](https://github.com/ProfessorManhattan/Bodega)**
 
 If you choose to utilize the development tools provided by this project then at some point you will have to run `bash start.sh` (or `npm i` which calls `bash start.sh` after it is done). The `start.sh` script will attempt to automatically install any requirements (without sudo) that are not already present on your build system to the user's `~/.local/bin` folder. The `start.sh` script also takes care of other tasks such as generating the documentation by calling tasks defined in the `Taskfile.yml`. For more details on how the optional requirements are used and set up, check out the [CONTRIBUTING.md](https://gitlab.com/megabyte-labs/docker/docker-compose/template-docker-compose/-/blob/master/docs/CONTRIBUTING.md) guide.
 
@@ -143,7 +145,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

@@ -1,9 +1,10 @@
----
+***
+
 title: Fedora 34
 description: A Fedora 34 image with Python 3, systemd, and a non-root sudo user (user and password are both *ansible*) intended to be used by Ansible Molecule tests
-editUrl: https://gitlab.com/megabyte-labs/docker/ansible-molecule/fedora-34/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/docker-molecule/src/definitions.ts
-sidebar_label: Fedora 34
+editUrl: <https://gitlab.com/megabyte-labs/docker/ansible-molecule/fedora-34/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/docker-molecule/src/definitions.ts>
+sidebar\_label: Fedora 34
 githubUrl: false
 gitlabUrl: false
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: '@megabytelabs/docker-ansible-molecule-fedora-34'
 packageSlug: false
 packageVersion: '0.0.1'
 pyPiPackageName: false
----
+----------------------
 
 <div align="center">
   <center>
@@ -87,27 +88,25 @@ pyPiPackageName: false
   </p>
 </div>
 
-> </br><h3 align="center">**A Fedora 34 image with Python 3, systemd, and a non-root sudo user (user and password are both _ansible_) intended to be used by Ansible Molecule tests**</h3></br>
-
-
+> </br><h3 align="center">**A Fedora 34 image with Python 3, systemd, and a non-root sudo user (user and password are both *ansible*) intended to be used by Ansible Molecule tests**</h3></br>
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#table-of-contents)
 
 ## ➤ Table of Contents
 
-- [➤ Overview](#-overview)
-- [➤ Requirements](#-requirements)
-  - [Optional Requirements](#optional-requirements)
-- [➤ Example Usage](#-example-usage)
-  - [Experimenting / Shelling Into Container](#experimenting--shelling-into-container)
-  - [Building the Docker Container](#building-the-docker-container)
-  - [Build Tools](#build-tools)
-  - [Integrating with Ansible Molecule](#integrating-with-ansible-molecule)
-    - [`molecule.yml` Example](#moleculeyml-example)
-    - [`converge.yml` Example](#convergeyml-example)
-    - [Additional Information on Ansible Molecule](#additional-information-on-ansible-molecule)
-- [➤ Contributing](#-contributing)
-- [➤ License](#-license)
+* [➤ Overview](#-overview)
+* [➤ Requirements](#-requirements)
+  * [Optional Requirements](#optional-requirements)
+* [➤ Example Usage](#-example-usage)
+  * [Experimenting / Shelling Into Container](#experimenting--shelling-into-container)
+  * [Building the Docker Container](#building-the-docker-container)
+  * [Build Tools](#build-tools)
+  * [Integrating with Ansible Molecule](#integrating-with-ansible-molecule)
+    * [`molecule.yml` Example](#moleculeyml-example)
+    * [`converge.yml` Example](#convergeyml-example)
+    * [Additional Information on Ansible Molecule](#additional-information-on-ansible-molecule)
+* [➤ Contributing](#-contributing)
+* [➤ License](#-license)
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#overview)
 
@@ -123,13 +122,13 @@ For an example of how to use the image that this project creates (and integrate 
 
 ## ➤ Requirements
 
-- **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
+* **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
 
 ### Optional Requirements
 
-- [DockerSlim](https://gitlab.com/megabyte-labs/ansible-roles/dockerslim) - Used for generating compact, secure images
-- [jq](https://gitlab.com/megabyte-labs/ansible-roles/jq) - Used by `.start.sh` to interact with JSON documents from the bash shell
-- [Node.js](https://gitlab.com/megabyte-labs/ansible-roles/nodejs) (_Version >=10_) - Utilized to add development features like a pre-commit hook and maintenance tasks
+* [DockerSlim](https://gitlab.com/megabyte-labs/ansible-roles/dockerslim) - Used for generating compact, secure images
+* [jq](https://gitlab.com/megabyte-labs/ansible-roles/jq) - Used by `.start.sh` to interact with JSON documents from the bash shell
+* [Node.js](https://gitlab.com/megabyte-labs/ansible-roles/nodejs) (*Version >=10*) - Utilized to add development features like a pre-commit hook and maintenance tasks
 
 If you choose to utilize the development tools provided by this project then at some point you will have to run `bash .start.sh` (or `npm i` which calls `bash .start.sh` after it is done). The `.start.sh` script will attempt to automatically install any requirements (without sudo) that are not already present on your build system to the user's `~/.local/bin` folder. The `.start.sh` script also takes care of other tasks such as generating the documentation. For more details on how the Optional Requirements are used and set up, check out the [CONTRIBUTING.md](https://gitlab.com/megabyte-labs/dockerfile/ansible-molecule/fedora-34/-/blob/master/CONTRIBUTING.md) guide.
 
@@ -308,7 +307,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

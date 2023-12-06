@@ -1,9 +1,10 @@
----
+***
+
 title: Task Dash
 description: A gorgeous TUI menu for go-task/task
-editUrl: https://gitlab.com/megabyte-labs/go/cli/task-dash/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/go/src/definitions.ts
-sidebar_label: Task Dash
+editUrl: <https://gitlab.com/megabyte-labs/go/cli/task-dash/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/go/src/definitions.ts>
+sidebar\_label: Task Dash
 githubUrl: 'https://github.com/megabyte-labs/task-dash'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/go/cli/task-dash'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,8 @@ packageName: 'task-dash'
 packageSlug: 'task-dash'
 packageVersion: '3.9.17'
 pyPiPackageName: 'task-dash'
----
+
+***
 
 <div align="center">
   <center>
@@ -67,23 +69,21 @@ pyPiPackageName: 'task-dash'
 
 > <br/><h4 align="center">**A gorgeous TUI menu for [go-task/task](https://github.com/go-task/task)**</h4><br/>
 
-
-
 <a href="#table-of-contents" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Go CLI Boilerplate](#go-cli-boilerplate)
-- [Installation](#installation)
-  - [Quick Method](#quick-method)
-  - [Compile Program with Go](#compile-program-with-go)
-  - [NPM Install Method](#npm-install-method)
-  - [Pre-Built Binary](#pre-built-binary)
-- [Usage](#usage)
-  - [Man Page](#man-page)
-- [Contributing](#contributing)
-- [License](#license)
+* [Overview](#overview)
+* [Go CLI Boilerplate](#go-cli-boilerplate)
+* [Installation](#installation)
+  * [Quick Method](#quick-method)
+  * [Compile Program with Go](#compile-program-with-go)
+  * [NPM Install Method](#npm-install-method)
+  * [Pre-Built Binary](#pre-built-binary)
+* [Usage](#usage)
+  * [Man Page](#man-page)
+* [Contributing](#contributing)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -112,26 +112,20 @@ There are several ways you can install this CLI. You can:
 
 If you are looking to install the CLI as quickly as possible then you can run the following script which will install the binary to your `/usr/local/bin` folder on macOS or Linux:
 
-```
-curl -sS https://install.doctor/task-dash | bash
-```
+    curl -sS https://install.doctor/task-dash | bash
 
 Or, if you are on Windows, you can install it by running:
 
-```
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://install.doctor/task-dash?os=win'))
-```
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://install.doctor/task-dash?os=win'))
 
 ### Compile Program with Go
 
 You can install the CLI by compiling it from the source as long as you have a recent version of Go installed:
 
-```
-git clone https://github.com/megabyte-labs/task-dash.git
-cd {{#withLast (split repository.github "/")}}this/withLast
-go build -o dist/task cmd/task/task.go
-sudo mv ./dist/task /usr/local/bin
-```
+    git clone https://github.com/megabyte-labs/task-dash.git
+    cd {{#withLast (split repository.github "/")}}this/withLast
+    go build -o dist/task cmd/task/task.go
+    sudo mv ./dist/task /usr/local/bin
 
 After you compile the program, you should then move the binary file to a location that is in your `PATH` (which is what the last line does in the snippet above).
 
@@ -139,9 +133,7 @@ After you compile the program, you should then move the binary file to a locatio
 
 Every release is bundled into an NPM package that you can install by running the following command:
 
-```
-npm install -g task-dash
-```
+    npm install -g task-dash
 
 ### Pre-Built Binary
 
@@ -153,50 +145,48 @@ If you trust us (and you should not.. trust.. anybody.. EVER), then you can also
 
 All of the usage instructions can be found by running `task-dash --help`. After running the command, you should be greeted with the following output:
 
-```
-Usage: task [-ilfwvsd] [--init] [--list] [--force] [--watch] [--verbose] [--silent] [--dir] [--taskfile] [--dry] [--summary] [task...]
+    Usage: task [-ilfwvsd] [--init] [--list] [--force] [--watch] [--verbose] [--silent] [--dir] [--taskfile] [--dry] [--summary] [task...]
 
-Runs the specified task(s). Falls back to the "default" task if no task name
-was specified, or lists all tasks if an unknown task name was specified.
+    Runs the specified task(s). Falls back to the "default" task if no task name
+    was specified, or lists all tasks if an unknown task name was specified.
 
-Example: 'task hello' with the following 'Taskfile.yml' file will generate an
-'output.txt' file with the content "hello".
+    Example: 'task hello' with the following 'Taskfile.yml' file will generate an
+    'output.txt' file with the content "hello".
 
-'''
-version: '3'
-tasks:
-  hello:
-    cmds:
-      - echo "I am going to write a file named 'output.txt' now."
-      - echo "hello" > output.txt
-    generates:
-      - output.txt
-'''
+    '''
+    version: '3'
+    tasks:
+      hello:
+        cmds:
+          - echo "I am going to write a file named 'output.txt' now."
+          - echo "hello" > output.txt
+        generates:
+          - output.txt
+    '''
 
-Options:
-  -c, --color                       colored output. Enabled by default. Set flag to false or use NO_COLOR=1 to disable (default true)
-  -C, --concurrency int             limit number tasks to run concurrently
-  -d, --dir string                  sets directory of execution
-  -n, --dry                         compiles and prints tasks in the order that they would be run, without executing them
-  -x, --exit-code                   pass-through the exit code of the task command
-  -f, --force                       forces execution even when the task is up-to-date
-  -h, --help                        shows Task usage
-  -i, --init                        creates a new Taskfile.yaml in the current folder
-  -l, --list                        lists tasks with description of current Taskfile
-  -a, --list-all                    lists tasks with or without a description
-      --menu                        show menu
-  -o, --output string               sets output style: [interleaved|group|prefixed]
-      --output-group-begin string   message template to print before a task's grouped output
-      --output-group-end string     message template to print after a task's grouped output
-  -p, --parallel                    executes tasks provided on command line in parallel
-  -s, --silent                      disables echoing
-      --status                      exits with non-zero exit code if any of the given tasks is not up-to-date
-      --summary                     show summary about a task
-  -t, --taskfile string             choose which Taskfile to run. Defaults to "Taskfile.yml"
-  -v, --verbose                     enables verbose mode
-      --version                     show Task version
-  -w, --watch                       enables watch of the given task
-```
+    Options:
+      -c, --color                       colored output. Enabled by default. Set flag to false or use NO_COLOR=1 to disable (default true)
+      -C, --concurrency int             limit number tasks to run concurrently
+      -d, --dir string                  sets directory of execution
+      -n, --dry                         compiles and prints tasks in the order that they would be run, without executing them
+      -x, --exit-code                   pass-through the exit code of the task command
+      -f, --force                       forces execution even when the task is up-to-date
+      -h, --help                        shows Task usage
+      -i, --init                        creates a new Taskfile.yaml in the current folder
+      -l, --list                        lists tasks with description of current Taskfile
+      -a, --list-all                    lists tasks with or without a description
+          --menu                        show menu
+      -o, --output string               sets output style: [interleaved|group|prefixed]
+          --output-group-begin string   message template to print before a task's grouped output
+          --output-group-end string     message template to print after a task's grouped output
+      -p, --parallel                    executes tasks provided on command line in parallel
+      -s, --silent                      disables echoing
+          --status                      exits with non-zero exit code if any of the given tasks is not up-to-date
+          --summary                     show summary about a task
+      -t, --taskfile string             choose which Taskfile to run. Defaults to "Taskfile.yml"
+      -v, --verbose                     enables verbose mode
+          --version                     show Task version
+      -w, --watch                       enables watch of the given task
 
 ### Man Page
 
@@ -217,7 +207,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

@@ -1,9 +1,10 @@
----
+***
+
 title: Go CLI
 description: A starting template for Go CLI projects
-editUrl: https://gitlab.com/megabyte-labs/templates/go-cli/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts
-sidebar_label: Go CLI
+editUrl: <https://gitlab.com/megabyte-labs/templates/go-cli/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts>
+sidebar\_label: Go CLI
 githubUrl: 'https://github.com/megabyte-labs/go-cli-template'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/templates/go-cli'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'go-cli-template'
 packageSlug: 'go-cli-template'
 packageVersion: '0.0.1'
 pyPiPackageName: 'go-cli-template'
----
+----------------------------------
 
 <div align="center">
   <center>
@@ -67,23 +68,21 @@ pyPiPackageName: 'go-cli-template'
 
 > <br/><h4 align="center">**Same as description but only shows up in the README and allows special characters**</h4><br/>
 
-
-
 <a href="#table-of-contents" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Go CLI Boilerplate](#go-cli-boilerplate)
-- [Installation](#installation)
-  - [Quick Method](#quick-method)
-  - [Compile Program with Go](#compile-program-with-go)
-  - [NPM Install Method](#npm-install-method)
-  - [Pre-Built Binary](#pre-built-binary)
-- [Usage](#usage)
-  - [Man Page](#man-page)
-- [Contributing](#contributing)
-- [License](#license)
+* [Overview](#overview)
+* [Go CLI Boilerplate](#go-cli-boilerplate)
+* [Installation](#installation)
+  * [Quick Method](#quick-method)
+  * [Compile Program with Go](#compile-program-with-go)
+  * [NPM Install Method](#npm-install-method)
+  * [Pre-Built Binary](#pre-built-binary)
+* [Usage](#usage)
+  * [Man Page](#man-page)
+* [Contributing](#contributing)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -112,26 +111,20 @@ There are several ways you can install this CLI. You can:
 
 If you are looking to install the CLI as quickly as possible then you can run the following script which will install the binary to your `/usr/local/bin` folder on macOS or Linux:
 
-```
-curl -sS https://install.doctor/null | bash
-```
+    curl -sS https://install.doctor/null | bash
 
 Or, if you are on Windows, you can install it by running:
 
-```
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://install.doctor/null?os=win'))
-```
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://install.doctor/null?os=win'))
 
 ### Compile Program with Go
 
 You can install the CLI by compiling it from the source as long as you have a recent version of Go installed:
 
-```
-git clone https://github.com/megabyte-labs/go-cli-template.git
-cd {{#withLast (split repository.github "/")}}this/withLast
-null
-sudo mv null /usr/local/bin
-```
+    git clone https://github.com/megabyte-labs/go-cli-template.git
+    cd {{#withLast (split repository.github "/")}}this/withLast
+    null
+    sudo mv null /usr/local/bin
 
 After you compile the program, you should then move the binary file to a location that is in your `PATH` (which is what the last line does in the snippet above).
 
@@ -139,9 +132,7 @@ After you compile the program, you should then move the binary file to a locatio
 
 Every release is bundled into an NPM package that you can install by running the following command:
 
-```
-npm install -g null
-```
+    npm install -g null
 
 ### Pre-Built Binary
 
@@ -153,9 +144,7 @@ If you trust us (and you should not.. trust.. anybody.. EVER), then you can also
 
 All of the usage instructions can be found by running `null --help`. After running the command, you should be greeted with the following output:
 
-```
-help_menu_output
-```
+    help_menu_output
 
 ### Man Page
 
@@ -176,7 +165,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

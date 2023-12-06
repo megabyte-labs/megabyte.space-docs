@@ -1,9 +1,10 @@
----
+***
+
 title: undefined
 description: Scripts / supporting files used in IFTTT recipes
-editUrl: https://gitlab.com/megabyte-labs/cloud/ifttt-scripts/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/misc/src/definitions.ts
-sidebar_label: undefined
+editUrl: <https://gitlab.com/megabyte-labs/cloud/ifttt-scripts/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/misc/src/definitions.ts>
+sidebar\_label: undefined
 githubUrl: 'https://github.com/megabyte-labs/ifttt-scripts'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/cloud/ifttt-scripts'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,8 @@ packageName: '@mblabs/ifttt-scripts'
 packageSlug: 'ifttt-scripts'
 packageVersion: '1.0.0'
 pyPiPackageName: 'ifttt-scripts'
----
+
+***
 
 <div align="center">
   <center>
@@ -53,18 +55,16 @@ pyPiPackageName: 'ifttt-scripts'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Overview
 
 **[IFTTT](https://ifttt.com/explore)** is a cool web-app connector service. It lets users easily make triggers that respond to IoT devices, social media events, and webhooks. This is the repository we store backup copies of custom scripts we use to control our various IFTTT recipes / apps.
-
-
 
 <a href="#contributing" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -81,7 +81,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

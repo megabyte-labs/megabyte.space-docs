@@ -1,9 +1,10 @@
----
+***
+
 title: Stylelint So Pretty
 description: Stylelint configuration with strict settings
-editUrl: https://gitlab.com/megabyte-labs/npm/configs/stylelint-config-so-pretty/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts
-sidebar_label: Stylelint So Pretty
+editUrl: <https://gitlab.com/megabyte-labs/npm/configs/stylelint-config-so-pretty/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts>
+sidebar\_label: Stylelint So Pretty
 githubUrl: 'https://github.com/megabyte-labs/stylelint-config-so-pretty'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/npm/configs/stylelint-config-so-pretty'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'stylelint-config-so-pretty'
 packageSlug: 'stylelint-config-so-pretty'
 packageVersion: '0.0.1'
 pyPiPackageName: 'stylelint-config-so-pretty'
----
+---------------------------------------------
 
 <div align="center">
   <center>
@@ -80,13 +81,13 @@ pyPiPackageName: 'stylelint-config-so-pretty'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Requirements](#requirements)
-  - [Developer Requirements](#developer-requirements)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Requirements](#requirements)
+  * [Developer Requirements](#developer-requirements)
+* [Configuration](#configuration)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -104,8 +105,8 @@ If you are simply including this library in your project, all you need is a rece
 
 The following versions of Node.js and Python are required for development:
 
-- **[Node.js >14.18.0](repository.project.node)**
-- **[Python >3.10.0](repository.project.python)**
+* **[Node.js >14.18.0](repository.project.node)**
+* **[Python >3.10.0](repository.project.python)**
 
 Other versions may work, but only the above versions are supported. Most development dependencies are installed automatically by our `Taskfile.yml` set-up (even Node.js and Python). Run `bash start.sh` to install **[Bodega](https://github.com/ProfessorManhattan/Bodega)** (an improved fork of [go-task](https://github.com/go-task/task)) and run the initialization sequence. The taskfiles will automatically install dependencies as they are needed, based on what development tasks you are running. For more information, check out the [CONTRIBUTING.md](https://github.com/megabyte-labs/stylelint-config-so-pretty/blob/main/docs/CONTRIBUTING.md) or simply run:
 
@@ -140,7 +141,7 @@ module.exports = {
     'stylelint-rem-over-px',
     'stylelint-selector-no-empty',
     'stylelint-selector-tag-no-without-class',
-    'stylelint-use-nesting'
+    'stylelint-use-nesting',
   ],
   rules: {
     'css-modules/composed-class-names': true,
@@ -148,9 +149,9 @@ module.exports = {
       true,
       {
         resolve: {
-          extensions: ['.css', '.scss']
-        }
-      }
+          extensions: ['.css', '.scss'],
+        },
+      },
     ],
     'css-modules/no-global-scoped-selector': true,
     'csstools/use-nesting': true,
@@ -163,23 +164,23 @@ module.exports = {
     'plugin/no-low-performance-animation-properties': true,
     'plugin/no-unresolved-module': {
       alias: {
-        assets: 'pebbles'
+        assets: 'pebbles',
       },
-      modules: ['node_modules']
+      modules: ['node_modules'],
     },
     'plugin/no-unsupported-browser-features': [
       true,
       {
         browsers: ['> 1%', 'Last 2 versions'],
         ignore: ['rem'],
-        ignorePartialSupport: true
-      }
+        ignorePartialSupport: true,
+      },
     ],
     'plugin/selector-tag-no-without-class': ['div', 'span'],
     'plugin/stylelint-group-selectors': true,
     'plugin/stylelint-selector-no-empty': true,
     'rem-over-px/rem-over-px': true,
-    'scale-unlimited/declaration-strict-value': 'color'
+    'scale-unlimited/declaration-strict-value': 'color',
   },
   extends: [
     'stylelint-config-html',
@@ -187,9 +188,9 @@ module.exports = {
     'stylelint-config-sass-guidelines',
     'stylelint-config-standard-scss',
     'stylelint-config-rational-order',
-    'stylelint-config-prettier-scss'
-  ]
-}
+    'stylelint-config-prettier-scss',
+  ],
+};
 ```
 
 <a href="#contributing" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
@@ -207,7 +208,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

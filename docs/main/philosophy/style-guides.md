@@ -24,9 +24,9 @@ These style guide catalogs link to style guides to a plethora of languages that 
 
 There are no widely accepted style guides available for Ansible. Instead, we recommend you look at our [Android Studio role](hhttps://gitlab.com/megabyte-labs/ansible-roles/androidstudio) as an example. Take special note of the following:
 
-* Comments in the task files are specially marked up
-* Comments in the variable files are specially marked up
-* The `main.yml` file references other files based on the operating system.
+- Comments in the task files are specially marked up
+- Comments in the variable files are specially marked up
+- The `main.yml` file references other files based on the operating system.
 
 If you follow the format of the Android Studio role, our automated system will automatically generate documentation properly for the role. This leads to a better experience for internetizens who make use of the role.
 

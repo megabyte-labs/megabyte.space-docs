@@ -1,9 +1,10 @@
----
+***
+
 title: Bodega
 description: A gorgeous, feature-packed drop-in replacement for the go-task project
-editUrl: https://gitlab.com/megabyte-labs/go/cli/bodega/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/go/src/definitions.ts
-sidebar_label: Bodega
+editUrl: <https://gitlab.com/megabyte-labs/go/cli/bodega/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/go/src/definitions.ts>
+sidebar\_label: Bodega
 githubUrl: 'https://github.com/megabyte-labs/Bodega'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/go/cli/bodega'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'go-bodega'
 packageSlug: 'bodega'
 packageVersion: '11.0.0'
 pyPiPackageName: 'bodega'
----
+-------------------------
 
 <div align="center">
   <center>
@@ -67,34 +68,32 @@ pyPiPackageName: 'bodega'
 
 > <br/><h4 align="center">**A gorgeous, feature-packed drop-in replacement for the [go-task/task](https://github.com/go-task/task) project**</h4><br/>
 
-
-
 <a href="#table-of-contents" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-  - [Prompt](#prompt)
-  - [Initial Shell Script](#initial-shell-script)
-  - [Hide tasks from being listed](#hide-tasks-from-being-listed)
-  - [Initial Status](#initial-status)
-  - [Stop commands before execution](#stop-commands-before-execution)
-  - [Aliases](#aliases)
-  - [More output messages](#more-output-messages)
-  - [Interactive Prompt](#interactive-prompt)
-  - [Fancy listing](#fancy-listing)
-  - [Output custom messages on task success/failure](#output-custom-messages-on-task-successfailure)
-  - [[WIP] Progress bar](#wip-progress-bar)
-- [Installation](#installation)
-  - [Quick Method](#quick-method)
-  - [Compile Program with Go](#compile-program-with-go)
-  - [NPM Install Method](#npm-install-method)
-  - [Pre-Built Binary](#pre-built-binary)
-- [Usage](#usage)
-  - [Man Page](#man-page)
-- [Contributing](#contributing)
-- [License](#license)
+* [Overview](#overview)
+* [Features](#features)
+  * [Prompt](#prompt)
+  * [Initial Shell Script](#initial-shell-script)
+  * [Hide tasks from being listed](#hide-tasks-from-being-listed)
+  * [Initial Status](#initial-status)
+  * [Stop commands before execution](#stop-commands-before-execution)
+  * [Aliases](#aliases)
+  * [More output messages](#more-output-messages)
+  * [Interactive Prompt](#interactive-prompt)
+  * [Fancy listing](#fancy-listing)
+  * [Output custom messages on task success/failure](#output-custom-messages-on-task-successfailure)
+  * [\[WIP\] Progress bar](#wip-progress-bar)
+* [Installation](#installation)
+  * [Quick Method](#quick-method)
+  * [Compile Program with Go](#compile-program-with-go)
+  * [NPM Install Method](#npm-install-method)
+  * [Pre-Built Binary](#pre-built-binary)
+* [Usage](#usage)
+  * [Man Page](#man-page)
+* [Contributing](#contributing)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -281,41 +280,39 @@ Running `task` with more `-v`s produces more verbose output
 
 Executing `task` spawns a REPL-like shell by default. If you would like to execute the default task, please do `task default`
 
-```
-user@user:$ task
-Type 'help' for a list of commands or 'quit' to exit
-task> --list
+    user@user:$ task
+    Type 'help' for a list of commands or 'quit' to exit
+    task> --list
 
-   Tasks
+       Tasks
 
-              TASK           │ ALIAS │          DESCRIPTION
-  ───────────────────────────┼───────┼─────────────────────────────────
-    echo-with-errors-ignored │ hello │ Echoes a string but with
-                             │       │ errors ignored
-    generate-files           │       │ Generate files diescription
-    init-script              │       │ Testing the new shell_rc field
-    simple                   │       │ A simple task with no extra
-                             │       │ features
-    sleep                    │       │ zzzzzzz
-    test_prompt              │       │ tests prompt
-    test_prompt_confirm      │       │ test prompt confirm
-    test_prompt_password     │       │ test prompt password
+                  TASK           │ ALIAS │          DESCRIPTION
+      ───────────────────────────┼───────┼─────────────────────────────────
+        echo-with-errors-ignored │ hello │ Echoes a string but with
+                                 │       │ errors ignored
+        generate-files           │       │ Generate files diescription
+        init-script              │       │ Testing the new shell_rc field
+        simple                   │       │ A simple task with no extra
+                                 │       │ features
+        sleep                    │       │ zzzzzzz
+        test_prompt              │       │ tests prompt
+        test_prompt_confirm      │       │ test prompt confirm
+        test_prompt_password     │       │ test prompt password
 
-task> simple
-task: [simple] echo "Hello"
-Hello
-task> sleep
-task: [sleep] sleep "2"
-task> ^D
-readline error: EOF
-user@user:$
-```
+    task> simple
+    task: [simple] echo "Hello"
+    Hello
+    task> sleep
+    task: [sleep] sleep "2"
+    task> ^D
+    readline error: EOF
+    user@user:$
 
 ### Fancy listing
 
 `task --list` uses the [list](https://github.com/charmbracelet/bubbles#list) component from bubbletea
 
-[![bubbletea_list_demo](https://asciinema.org/a/sem2Ac3yZIUJ03HTMHyOEOq7I)](https://asciinema.org/a/sem2Ac3yZIUJ03HTMHyOEOq7I)
+[![bubbletea\_list\_demo](https://asciinema.org/a/sem2Ac3yZIUJ03HTMHyOEOq7I)](https://asciinema.org/a/sem2Ac3yZIUJ03HTMHyOEOq7I)
 
 ### Output custom messages on task success/failure
 
@@ -358,7 +355,7 @@ task: Failed to run task "custom-logs": exit status 12
 
 ```
 
-### [WIP] Progress bar
+### \[WIP] Progress bar
 
 Trach the issue [here](https://github.com/charmbracelet/bubbletea/issues/179)
 
@@ -377,26 +374,20 @@ There are several ways you can install this CLI. You can:
 
 If you are looking to install the CLI as quickly as possible then you can run the following script which will install the binary to your `/usr/local/bin` folder on macOS or Linux:
 
-```
-curl -sS https://install.doctor/task | bash
-```
+    curl -sS https://install.doctor/task | bash
 
 Or, if you are on Windows, you can install it by running:
 
-```
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://install.doctor/task?os=win'))
-```
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://install.doctor/task?os=win'))
 
 ### Compile Program with Go
 
 You can install the CLI by compiling it from the source as long as you have a recent version of Go installed:
 
-```
-git clone https://github.com/megabyte-labs/Bodega.git
-cd {{#withLast (split repository.github "/")}}this/withLast
-go build -o dist/task cmd/task/task.go
-sudo mv ./dist/task /usr/local/bin
-```
+    git clone https://github.com/megabyte-labs/Bodega.git
+    cd {{#withLast (split repository.github "/")}}this/withLast
+    go build -o dist/task cmd/task/task.go
+    sudo mv ./dist/task /usr/local/bin
 
 After you compile the program, you should then move the binary file to a location that is in your `PATH` (which is what the last line does in the snippet above).
 
@@ -404,9 +395,7 @@ After you compile the program, you should then move the binary file to a locatio
 
 Every release is bundled into an NPM package that you can install by running the following command:
 
-```
-npm install -g task
-```
+    npm install -g task
 
 ### Pre-Built Binary
 
@@ -418,50 +407,48 @@ If you trust us (and you should not.. trust.. anybody.. EVER), then you can also
 
 All of the usage instructions can be found by running `task --help`. After running the command, you should be greeted with the following output:
 
-```
-Usage: task [-ilfwvsdm] [--init] [--list] [--force] [--watch] [--verbose] [--silent] [--dir] [--taskfile] [--dry] [--menu] [--summary] [--debug] [task...]
+    Usage: task [-ilfwvsdm] [--init] [--list] [--force] [--watch] [--verbose] [--silent] [--dir] [--taskfile] [--dry] [--menu] [--summary] [--debug] [task...]
 
-Runs the specified task(s). Runs a built-in shell if no task name
-was specified, or lists all tasks if an unknown task name was specified.
+    Runs the specified task(s). Runs a built-in shell if no task name
+    was specified, or lists all tasks if an unknown task name was specified.
 
-Example: 'task hello' with the following 'Taskfile.yml' file will generate an
-'output.txt' file with the content "hello".
+    Example: 'task hello' with the following 'Taskfile.yml' file will generate an
+    'output.txt' file with the content "hello".
 
-'''
-version: '3'
-tasks:
-  hello:
-    cmds:
-      - echo "I am going to write a file named 'output.txt' now."
-      - echo "hello" > output.txt
-    generates:
-      - output.txt
-'''
+    '''
+    version: '3'
+    tasks:
+      hello:
+        cmds:
+          - echo "I am going to write a file named 'output.txt' now."
+          - echo "hello" > output.txt
+        generates:
+          - output.txt
+    '''
 
-Options:
-  -c, --color             colored output. Enabled by default. Set flag to false or use NO_COLOR=1 to disable (default true)
-  -C, --concurrency int   limit number tasks to run concurrently
-      --debug             stop before each command execution
-  -d, --dir string        sets directory of execution
-      --dry               compiles and prints tasks in the order that they would be run, without executing them
-  -f, --force             forces execution even when the task is up-to-date
-  -h, --help              shows Task usage
-  -i, --init              creates a new Taskfile.yaml in the current folder
-  -l, --list              lists tasks with description of current Taskfile
-  -a, --list-all          lists tasks with or without a description
-  -m, --menu              runs an interactive listing of tasks
-  -o, --output string     sets output style: [interleaved|group|prefixed]
-  -p, --parallel          executes tasks provided on command line in parallel
-      --server            runs as a server
-  -s, --silent            disables echoing
-      --status            exits with non-zero exit code if any of the given tasks is not up-to-date
-      --summary           show summary about a task
-  -t, --taskfile string   choose which Taskfile to run. Defaults to "Taskfile.yml"
-      --use-tls           enable server to use TLS
-  -v, --verbose count     enables verbose mode (repeat option for more output)
-      --version           show Task version
-  -w, --watch             enables watch of the given task
-```
+    Options:
+      -c, --color             colored output. Enabled by default. Set flag to false or use NO_COLOR=1 to disable (default true)
+      -C, --concurrency int   limit number tasks to run concurrently
+          --debug             stop before each command execution
+      -d, --dir string        sets directory of execution
+          --dry               compiles and prints tasks in the order that they would be run, without executing them
+      -f, --force             forces execution even when the task is up-to-date
+      -h, --help              shows Task usage
+      -i, --init              creates a new Taskfile.yaml in the current folder
+      -l, --list              lists tasks with description of current Taskfile
+      -a, --list-all          lists tasks with or without a description
+      -m, --menu              runs an interactive listing of tasks
+      -o, --output string     sets output style: [interleaved|group|prefixed]
+      -p, --parallel          executes tasks provided on command line in parallel
+          --server            runs as a server
+      -s, --silent            disables echoing
+          --status            exits with non-zero exit code if any of the given tasks is not up-to-date
+          --summary           show summary about a task
+      -t, --taskfile string   choose which Taskfile to run. Defaults to "Taskfile.yml"
+          --use-tls           enable server to use TLS
+      -v, --verbose count     enables verbose mode (repeat option for more output)
+          --version           show Task version
+      -w, --watch             enables watch of the given task
 
 ### Man Page
 
@@ -482,7 +469,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

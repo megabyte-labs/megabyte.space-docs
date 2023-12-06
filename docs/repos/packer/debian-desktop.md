@@ -1,9 +1,10 @@
----
+***
+
 title: Debian Desktop
 description: An automated Debian Desktop Packer template (currently, version 10.9) that builds boxes using the latest Debian Desktop Live release
-editUrl: https://gitlab.com/megabyte-labs/packer/debian-desktop/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/packer/src/definitions.ts
-sidebar_label: Debian Desktop
+editUrl: <https://gitlab.com/megabyte-labs/packer/debian-desktop/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/packer/src/definitions.ts>
+sidebar\_label: Debian Desktop
 githubUrl: 'https://github.com/megabyte-labs/packer-debian-desktop'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/packer/debian-desktop'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: '@mblabs/debian-desktop'
 packageSlug: 'debian-desktop'
 packageVersion: '1.0.0'
 pyPiPackageName: 'debian-desktop'
----
+---------------------------------
 
 <div align="center">
   <center>
@@ -79,21 +80,19 @@ pyPiPackageName: 'debian-desktop'
 
 > <br/><h4 align="center">**An automated Debian Desktop Packer template (currently, version 10.9) that builds boxes using the latest Debian Desktop Live release**</h4><br/>
 
-
-
 <a href="#table-of-contents" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Table of Contents
 
-- [Overview](#overview)
-  - [Supported Virtualization Platforms](#supported-virtualization-platforms)
-- [Requirements](#requirements)
-- [Quick Start](#quick-start)
-- [Creating Your Own Box](#creating-your-own-box)
-- [Updating Your Box](#updating-your-box)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+  * [Supported Virtualization Platforms](#supported-virtualization-platforms)
+* [Requirements](#requirements)
+* [Quick Start](#quick-start)
+* [Creating Your Own Box](#creating-your-own-box)
+* [Updating Your Box](#updating-your-box)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -103,27 +102,27 @@ This project houses configurations that can be used to build performant [Debian 
 
 This project:
 
-- Currently builds a minimal Debian Desktop 10.9 VM image by default
-- May contain multiple templates which will all end in `template.json` and be present in the root of the project
-- Automates the process of keeping our [Debian Desktop 10.9 VM images](https://app.vagrantup.com/Megabyte/boxes/Debian-Desktop) up-to-date with the latest upstream source by (1) using the `vagrant-cloud` post-processor to automatically upload the box after it is built and (2) running the build with a cronjob
-- In some cases, [LatestOS](https://pypi.org/project/latestos/) is used to automatically update the link to the base image / checksums to the latest release
+* Currently builds a minimal Debian Desktop 10.9 VM image by default
+* May contain multiple templates which will all end in `template.json` and be present in the root of the project
+* Automates the process of keeping our [Debian Desktop 10.9 VM images](https://app.vagrantup.com/Megabyte/boxes/Debian-Desktop) up-to-date with the latest upstream source by (1) using the `vagrant-cloud` post-processor to automatically upload the box after it is built and (2) running the build with a cronjob
+* In some cases, [LatestOS](https://pypi.org/project/latestos/) is used to automatically update the link to the base image / checksums to the latest release
 
 ### Supported Virtualization Platforms
 
 This project supports creating boxes for the following virtualization platforms:
 
-- [KVM](https://gitlab.com/megabyte-labs/ansible-roles/kvm) 
-- [Parallels](https://gitlab.com/megabyte-labs/ansible-roles/parallels) 
-- [VirtualBox](https://gitlab.com/megabyte-labs/ansible-roles/virtualbox) 
-- [VMWare](https://gitlab.com/megabyte-labs/ansible-roles/vmware) 
+* [KVM](https://gitlab.com/megabyte-labs/ansible-roles/kvm)
+* [Parallels](https://gitlab.com/megabyte-labs/ansible-roles/parallels)
+* [VirtualBox](https://gitlab.com/megabyte-labs/ansible-roles/virtualbox)
+* [VMWare](https://gitlab.com/megabyte-labs/ansible-roles/vmware)
 
 <a href="#requirements" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Requirements
 
-- At least one of the above virtualization platforms installed ([VirtualBox](https://github.com/megabyte-labs/ansible-virtualbox) is a good starting point if you do not already have one of the platforms installed)
-- [Packer](https://github.com/megabyte-labs/ansible-packer)
-- [Vagrant](https://github.com/megabyte-labs/ansible-vagrant)
+* At least one of the above virtualization platforms installed ([VirtualBox](https://github.com/megabyte-labs/ansible-virtualbox) is a good starting point if you do not already have one of the platforms installed)
+* [Packer](https://github.com/megabyte-labs/ansible-packer)
+* [Vagrant](https://github.com/megabyte-labs/ansible-vagrant)
 
 <a href="#quick-start" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -135,7 +134,7 @@ If you have [VirtualBox](https://github.com/megabyte-labs/ansible-virtualbox) an
 vagrant up
 ```
 
-The default username and password are both _vagrant_.
+The default username and password are both *vagrant*.
 
 <a href="#creating-your-own-box" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -154,11 +153,11 @@ export VAGRANT_CLOUD_TOKEN=YourTokenHere
 task packer:build
 ```
 
-_[What is Bodega?](https://github.com/ProfessorManhattan/Bodega)_
+*[What is Bodega?](https://github.com/ProfessorManhattan/Bodega)*
 
 After running the code above, you will kick off a parallelized build for all the virtualization platforms that your computer currently has installed. If you want to install all of the virtualization platforms that your computer could potentially support then you can run `task packer:install:platforms`.
 
-After building the VM images, the example above will upload your images to your VagrantUp box repository _(that you have to create before running the script that is above)_. If you want to build the box for another provider then look at the `template.json` in the `"builders"` section for the types of boxes you can create (e.g. `virtualbox-iso`, `vmware-iso`, `parallels-iso`, `qemu`).
+After building the VM images, the example above will upload your images to your VagrantUp box repository *(that you have to create before running the script that is above)*. If you want to build the box for another provider then look at the `template.json` in the `"builders"` section for the types of boxes you can create (e.g. `virtualbox-iso`, `vmware-iso`, `parallels-iso`, `qemu`).
 
 If you do not want your box to be automatically uploaded to VagrantUp after you build it with Packer then you will need to remove the `"vagrant-cloud"` section under `"post-processors"`. The section is wrapped in a nested array. If you are removing the `vagrant-cloud` post-processor, then the section no longer has to be placed in a nested array.
 
@@ -183,7 +182,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

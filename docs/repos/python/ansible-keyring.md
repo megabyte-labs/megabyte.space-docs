@@ -1,9 +1,10 @@
----
+***
+
 title: Ansible Keyring
 description: A CLI that extends ansible, ansible-playbook, and ansible-vault to use the system keyring for vault passwords
-editUrl: https://gitlab.com/megabyte-labs/python/cli/ansible-keyring/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/python/src/definitions.ts
-sidebar_label: Ansible Keyring
+editUrl: <https://gitlab.com/megabyte-labs/python/cli/ansible-keyring/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/python/src/definitions.ts>
+sidebar\_label: Ansible Keyring
 githubUrl: 'https://github.com/megabyte-labs/ansible-keyring'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/python/cli/ansible-keyring'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'ansible-keyring'
 packageSlug: 'ansible-keyring'
 packageVersion: '1.2.7'
 pyPiPackageName: 'ansible-keyring'
----
+----------------------------------
 
 <div align="center">
   <center>
@@ -71,7 +72,7 @@ pyPiPackageName: 'ansible-keyring'
   </a>
 </div>
 
-> <br/><h4 align="center">**subheader_description**</h4><br/>
+> <br/><h4 align="center">**subheader\_description**</h4><br/>
 
 <!--TERMINALIZE![terminalizer_title](repository.group.python_cli/ansible-keyring* **github**: /raw/master/docs/demo.gif
 * **gitlab**: /-/raw/master/docs/demo.gif)TERMINALIZE-->
@@ -80,18 +81,18 @@ pyPiPackageName: 'ansible-keyring'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [This Repository (Shared Common)](#this-repository-shared-common)
-- [Installation](#installation)
-  - [PyPi](#pypi)
-  - [Install Doctor](#install-doctor)
-  - [Homebrew](#homebrew)
-  - [Chocolatey](#chocolatey)
-  - [Binary Releases](#binary-releases)
-- [Requirements](#requirements)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [This Repository (Shared Common)](#this-repository-shared-common)
+* [Installation](#installation)
+  * [PyPi](#pypi)
+  * [Install Doctor](#install-doctor)
+  * [Homebrew](#homebrew)
+  * [Chocolatey](#chocolatey)
+  * [Binary Releases](#binary-releases)
+* [Requirements](#requirements)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -99,8 +100,8 @@ pyPiPackageName: 'ansible-keyring'
 
 This repository is home to **[ansible-keyring](https://github.com/ProfessorManhattan/ansible-keyring)** a CLI that extends the `ansible`, `ansible-playbook`, and `ansible-vault` command to retrieve vault passwords from the system keyring. It is based on the work of [ansible-tools](https://pypi.org/project/ansible-tools/) with a couple usability improvements. The features it adds are:
 
-- Does not have to be run only in directories where `ansible.cfg` is present
-- New, shorter, more intuitive command aliases
+* Does not have to be run only in directories where `ansible.cfg` is present
+* New, shorter, more intuitive command aliases
 
 <a href="#this-repository-shared-common" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -191,7 +192,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

@@ -9,9 +9,9 @@ hide_table_of_contents: true
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img
-  alt="Enterprise-grade open-source"
-  src={require('/img/featured/megabyte-labs.png').default}
-  loading="eager"
+alt="Enterprise-grade open-source"
+src={require('/img/featured/megabyte-labs.png').default}
+loading="eager"
 />
 
 ## Coming Soon..

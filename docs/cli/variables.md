@@ -1,0 +1,1 @@
+If DISABLE_LINT is set, linting will be disabled. Currently, this is implemented for the Markdown  linting and generation libraries.

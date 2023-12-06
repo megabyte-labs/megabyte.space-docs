@@ -49,6 +49,7 @@
     "clsx": "^1.1.1",
     "crowdin": "^3.5.0",
     "docusaurus-plugin-module-alias": "^0.0.2",
+    "eslint-config-strict-mode": "^1.2.1",
     "fs-extra": "^9.1.0",
     "modern-normalize": "^1.1.0",
     "react": "^16.13.1",

@@ -1,9 +1,10 @@
----
+***
+
 title: Conventional Changelog Emoji Config
 description: A changelog configuration for Semantic Release that supports emojis
-editUrl: https://gitlab.com/megabyte-labs/npm/configs/conventional-changelog-emoji-config/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts
-sidebar_label: Conventional Changelog Emoji Config
+editUrl: <https://gitlab.com/megabyte-labs/npm/configs/conventional-changelog-emoji-config/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts>
+sidebar\_label: Conventional Changelog Emoji Config
 githubUrl: 'https://github.com/megabyte-labs/conventional-changelog-emoji-config'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/npm/configs/conventional-changelog-emoji-config'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'conventional-changelog-emoji-config'
 packageSlug: 'conventional-changelog-emoji-config'
 packageVersion: '1.4.8'
 pyPiPackageName: 'conventional-changelog-emoji-config'
----
+------------------------------------------------------
 
 <div align="center">
   <center>
@@ -80,13 +81,13 @@ pyPiPackageName: 'conventional-changelog-emoji-config'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Requirements](#requirements)
-  - [Developer Requirements](#developer-requirements)
-- [Configuration File](#configuration-file)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Requirements](#requirements)
+  * [Developer Requirements](#developer-requirements)
+* [Configuration File](#configuration-file)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -104,8 +105,8 @@ If you are simply including this library in your project, all you need is a rece
 
 The following versions of Node.js and Python are required for development:
 
-- **[Node.js >14.18.0](repository.project.node)**
-- **[Python >3.10.0](repository.project.python)**
+* **[Node.js >14.18.0](repository.project.node)**
+* **[Python >3.10.0](repository.project.python)**
 
 Other versions may work, but only the above versions are supported. Most development dependencies are installed automatically by our `Taskfile.yml` set-up (even Node.js and Python). Run `bash start.sh` to install **[Bodega](https://github.com/ProfessorManhattan/Bodega)** (an improved fork of [go-task](https://github.com/go-task/task)) and run the initialization sequence. The taskfiles will automatically install dependencies as they are needed, based on what development tasks you are running. For more information, check out the [CONTRIBUTING.md](https://github.com/megabyte-labs/conventional-changelog-emoji-config/blob/main/docs/CONTRIBUTING.md) or simply run:
 
@@ -121,15 +122,15 @@ npm run help
 
 `conventional-changelog-emoji-config` uses [cosmiconfig](https://github.com/davidtheclark/cosmiconfig#cosmiconfigsync) to find and load your configuration object. Starting from the current working directory, it looks for the following possible sources:
 
-- a `changelog` property in `package.json`
-- a `.changelogrc` file
-- a `changelog.config.js` file exporting a JS object
+* a `changelog` property in `package.json`
+* a `.changelogrc` file
+* a `changelog.config.js` file exporting a JS object
 
 The `.changelogrc` file (without extension) can be in JSON or YAML format. You can add a filename extension to help your text editor provide syntax checking and highlighting:
 
-- `.changelogrc.json`
-- `.changelogrc.yaml` / `.changelogrc.yml`
-- `.changelogrc.js`
+* `.changelogrc.json`
+* `.changelogrc.yaml` / `.changelogrc.yml`
+* `.changelogrc.js`
 
 The configuration object has the following signature:
 
@@ -145,22 +146,22 @@ interface ChangelogConfig {
    * will map all config 'scope' to 'commitlint-gitmoji-config' in the changelog
    * @default { }
    */
-  scopeDisplayName?: Record<string, string>
+  scopeDisplayName?: Record<string, string>;
   /**
    * display types
    * @default undefined
    */
-  displayTypes?: string[]
+  displayTypes?: string[];
   /**
    * whether to include emoji in title
    * @default true
    */
-  withEmoji?: boolean
+  withEmoji?: boolean;
   /**
    * whether to show author
    * @default false
    */
-  showAuthor?: boolean
+  showAuthor?: boolean;
 }
 ```
 
@@ -179,7 +180,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

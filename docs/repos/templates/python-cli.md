@@ -1,9 +1,10 @@
----
+***
+
 title: Python CLI Boilerplate
 description: Boilerplate/Template for Python CLI projects
-editUrl: https://gitlab.com/megabyte-labs/templates/python-cli/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts
-sidebar_label: Python CLI Boilerplate
+editUrl: <https://gitlab.com/megabyte-labs/templates/python-cli/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts>
+sidebar\_label: Python CLI Boilerplate
 githubUrl: 'https://github.com/megabyte-labs/template-python-cli'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/templates/python-cli'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: '@mblabs/template-python-cli'
 packageSlug: 'python-cli'
 packageVersion: '1.1.14'
 pyPiPackageName: 'python-cli'
----
+-----------------------------
 
 <div align="center">
   <center>
@@ -71,7 +72,7 @@ pyPiPackageName: 'python-cli'
   </a>
 </div>
 
-> </br><h4 align="center">**subheader_description**</h4></br>
+> </br><h4 align="center">**subheader\_description**</h4></br>
 
 <!--TERMINALIZE![terminalizer_title](repository.group.python_cli/python-cli* **github**: /raw/master/docs/demo.gif
 * **gitlab**: /-/raw/master/docs/demo.gif)TERMINALIZE-->
@@ -80,18 +81,18 @@ pyPiPackageName: 'python-cli'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Python CLI Boilerplate Template](#python-cli-boilerplate-template)
-- [Installation](#installation)
-  - [PyPi](#pypi)
-  - [Install Doctor](#install-doctor)
-  - [Homebrew](#homebrew)
-  - [Chocolatey](#chocolatey)
-  - [Binary Releases](#binary-releases)
-- [Requirements](#requirements)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Python CLI Boilerplate Template](#python-cli-boilerplate-template)
+* [Installation](#installation)
+  * [PyPi](#pypi)
+  * [Install Doctor](#install-doctor)
+  * [Homebrew](#homebrew)
+  * [Chocolatey](#chocolatey)
+  * [Binary Releases](#binary-releases)
+* [Requirements](#requirements)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -190,7 +191,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

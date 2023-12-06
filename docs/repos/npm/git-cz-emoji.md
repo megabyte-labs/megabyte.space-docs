@@ -1,9 +1,10 @@
----
+***
+
 title: Conventional Emoji Commitizen Config
 description: Commitizen configuration that follows the Conventional Changelog format with emoji support
-editUrl: https://gitlab.com/megabyte-labs/npm/configs/git-cz-emoji/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts
-sidebar_label: Conventional Emoji Commitizen Config
+editUrl: <https://gitlab.com/megabyte-labs/npm/configs/git-cz-emoji/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts>
+sidebar\_label: Conventional Emoji Commitizen Config
 githubUrl: 'https://github.com/megabyte-labs/git-cz-emoji'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/npm/configs/git-cz-emoji'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'git-cz-emoji'
 packageSlug: 'git-cz-emoji'
 packageVersion: '1.1.24'
 pyPiPackageName: 'git-cz-emoji'
----
+-------------------------------
 
 <div align="center">
   <center>
@@ -80,18 +81,18 @@ pyPiPackageName: 'git-cz-emoji'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Requirements](#requirements)
-  - [Developer Requirements](#developer-requirements)
-- [Preview](#preview)
-- [Format](#format)
-- [Installation](#installation)
-  - [Installing Globally](#installing-globally)
-  - [Installing Locally](#installing-locally)
-- [Usage](#usage)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Requirements](#requirements)
+  * [Developer Requirements](#developer-requirements)
+* [Preview](#preview)
+* [Format](#format)
+* [Installation](#installation)
+  * [Installing Globally](#installing-globally)
+  * [Installing Locally](#installing-locally)
+* [Usage](#usage)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -99,8 +100,8 @@ pyPiPackageName: 'git-cz-emoji'
 
 This project is a shareable Commitizen configuration. It is designed to work alongside git workflows that implement the [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog) format, [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), and adds support for emojis (important for UX). This project borrows heavily from [cz-conventional-emoji](https://github.com/gaoac/cz-conventional-emoji). It modifies it to include more aethestically pleasing emojis as well as to work seamlessly with the other configurations it is meant to work alongside, namely:
 
-- **[semantic-release-config](https://github.com/ProfessorManhattan/semantic-release-config)** - An all-in-one Semantic Release plugin that supports NPM, Go, Python, and Docker projects (among a few others)
-- **[conventional-changelog-emoji-config](https://github.com/ProfessorManhattan/conventional-changelog-emoji-config)** - Configuration for generating CHANGELOG.md files that look good on both GitHub and GitLab as well as accomodate situations where the GitHub/GitLab repository are mirrored
+* **[semantic-release-config](https://github.com/ProfessorManhattan/semantic-release-config)** - An all-in-one Semantic Release plugin that supports NPM, Go, Python, and Docker projects (among a few others)
+* **[conventional-changelog-emoji-config](https://github.com/ProfessorManhattan/conventional-changelog-emoji-config)** - Configuration for generating CHANGELOG.md files that look good on both GitHub and GitLab as well as accomodate situations where the GitHub/GitLab repository are mirrored
 
 <a href="#requirements" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -112,8 +113,8 @@ If you are simply including this library in your project, all you need is a rece
 
 The following versions of Node.js and Python are required for development:
 
-- **[Node.js >14.18.0](repository.project.node)**
-- **[Python >3.10.0](repository.project.python)**
+* **[Node.js >14.18.0](repository.project.node)**
+* **[Python >3.10.0](repository.project.python)**
 
 Other versions may work, but only the above versions are supported. Most development dependencies are installed automatically by our `Taskfile.yml` set-up (even Node.js and Python). Run `bash start.sh` to install **[Bodega](https://github.com/ProfessorManhattan/Bodega)** (an improved fork of [go-task](https://github.com/go-task/task)) and run the initialization sequence. The taskfiles will automatically install dependencies as they are needed, based on what development tasks you are running. For more information, check out the [CONTRIBUTING.md](https://github.com/megabyte-labs/git-cz-emoji/blob/main/docs/CONTRIBUTING.md) or simply run:
 
@@ -148,7 +149,7 @@ Format of the commit is below:
 [emoji] [type]([scope]): [commit msg] (#[issue number])
 ```
 
-_Note:_ `scope` & `issue number` are optional.
+*Note:* `scope` & `issue number` are optional.
 
 <a href="#installation" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -214,7 +215,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

@@ -1,9 +1,10 @@
----
+***
+
 title: Oil Refinery
 description: Oil Refinery is an Angular/Ionic base project that supports every build target imaginable ⛽🔥🤤
-editUrl: https://gitlab.com/megabyte-labs/templates/angular-app/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts
-sidebar_label: Oil Refinery
+editUrl: <https://gitlab.com/megabyte-labs/templates/angular-app/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/templates/src/definitions.ts>
+sidebar\_label: Oil Refinery
 githubUrl: 'https://github.com/megabyte-labs/Oil-Refinery'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/templates/angular-app'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'oil-refinery'
 packageSlug: 'oil-refinery'
 packageVersion: '0.0.1'
 pyPiPackageName: 'oil-refinery'
----
+-------------------------------
 
 <div align="center">
   <center>
@@ -71,23 +72,23 @@ pyPiPackageName: 'oil-refinery'
   </a>
 </div>
 
-> </br><h4 align="center">**subheader_description**</h4></br>
+> </br><h4 align="center">**subheader\_description**</h4></br>
 
 <a href="#table-of-contents" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Quick Start](#quick-start)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
+* [Overview](#overview)
+* [Quick Start](#quick-start)
+* [Dependencies](#dependencies)
+* [Contributing](#contributing)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Overview
 
-alternative_description. This project combines [Angular](https://angular.io/) and [Ionic](https://ionicframework.com/) with the build tools necessary to turn a single codebase into every imaginable build target. Out of the box, the project supports generating builds for web, Android, iOS, Chrome, Firefox, Opera, Windows, macOS, Linux, and even menu bar programs that live in your system tray. On top of that, it bundles some of the best build and CI/CD tools with dependencies that are installed on-demand (i.e. if you do not need a feature, the dependencies are not installed). Powering the project is a custom version of go-task that we named [Run](https://gitlab.com/megabyte-labs/go/cli/run) along with a suite of development tools that leave no stone un-turned (e.g. git hooks, automatic documentation, and _optional_ continuous updates to the build tools). This project is 🔥🔥🔥.
+alternative*description. This project combines [Angular](https://angular.io/) and [Ionic](https://ionicframework.com/) with the build tools necessary to turn a single codebase into every imaginable build target. Out of the box, the project supports generating builds for web, Android, iOS, Chrome, Firefox, Opera, Windows, macOS, Linux, and even menu bar programs that live in your system tray. On top of that, it bundles some of the best build and CI/CD tools with dependencies that are installed on-demand (i.e. if you do not need a feature, the dependencies are not installed). Powering the project is a custom version of go-task that we named [Run](https://gitlab.com/megabyte-labs/go/cli/run) along with a suite of development tools that leave no stone un-turned (e.g. git hooks, automatic documentation, and \_optional* continuous updates to the build tools). This project is 🔥🔥🔥.
 
 {{ load:.assets/features.md }}
 
@@ -114,7 +115,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

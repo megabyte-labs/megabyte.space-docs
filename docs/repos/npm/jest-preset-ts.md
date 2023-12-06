@@ -1,9 +1,10 @@
----
+***
+
 title: Jest Preset TypeScript
 description: A Jest preset geared towards TypeScript, Angular, and Node.js projects
-editUrl: https://gitlab.com/megabyte-labs/npm/configs/jest-preset-ts/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts
-sidebar_label: Jest Preset TypeScript
+editUrl: <https://gitlab.com/megabyte-labs/npm/configs/jest-preset-ts/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts>
+sidebar\_label: Jest Preset TypeScript
 githubUrl: 'https://github.com/megabyte-labs/jest-preset-ts'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/npm/configs/jest-preset-ts'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'jest-preset-ts'
 packageSlug: 'jest-preset-ts'
 packageVersion: '1.0.1'
 pyPiPackageName: 'jest-preset-ts'
----
+---------------------------------
 
 <div align="center">
   <center>
@@ -80,15 +81,15 @@ pyPiPackageName: 'jest-preset-ts'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Requirements](#requirements)
-  - [Developer Requirements](#developer-requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Plugins](#plugins)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Requirements](#requirements)
+  * [Developer Requirements](#developer-requirements)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Plugins](#plugins)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -106,8 +107,8 @@ If you are simply including this library in your project, all you need is a rece
 
 The following versions of Node.js and Python are required for development:
 
-- **[Node.js >14.18.0](repository.project.node)**
-- **[Python >3.10.0](repository.project.python)**
+* **[Node.js >14.18.0](repository.project.node)**
+* **[Python >3.10.0](repository.project.python)**
 
 Other versions may work, but only the above versions are supported. Most development dependencies are installed automatically by our `Taskfile.yml` set-up (even Node.js and Python). Run `bash start.sh` to install **[Bodega](https://github.com/ProfessorManhattan/Bodega)** (an improved fork of [go-task](https://github.com/go-task/task)) and run the initialization sequence. The taskfiles will automatically install dependencies as they are needed, based on what development tasks you are running. For more information, check out the [CONTRIBUTING.md](https://github.com/megabyte-labs/jest-preset-ts/blob/main/docs/CONTRIBUTING.md) or simply run:
 
@@ -208,7 +209,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

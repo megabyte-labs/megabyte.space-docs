@@ -1,9 +1,10 @@
----
+***
+
 title: Semgrep
 description: A Semgrep slim container and a CodeClimate engine container for GitLab CI
-editUrl: https://gitlab.com/megabyte-labs/docker/codeclimate/semgrep/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/codeclimate/src/definitions.ts
-sidebar_label: Semgrep
+editUrl: <https://gitlab.com/megabyte-labs/docker/codeclimate/semgrep/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/codeclimate/src/definitions.ts>
+sidebar\_label: Semgrep
 githubUrl: 'https://github.com/megabyte-labs/codeclimate-semgrep'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/docker/codeclimate/semgrep'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: '@megabytelabs/codeclimate-semgrep'
 packageSlug: 'semgrep'
 packageVersion: '1.0.2'
 pyPiPackageName: 'semgrep'
----
+--------------------------
 
 <div align="center">
   <center>
@@ -77,27 +78,27 @@ pyPiPackageName: 'semgrep'
 
 ## Table of Contents
 
-- [Overview](#overview)
-  - [Standalone](#standalone)
-  - [Slim Build](#slim-build)
-  - [Versioning](#versioning)
-  - [Testing](#testing)
-- [Requirements](#requirements)
-  - [Development Requirements](#development-requirements)
-- [Examples](#examples)
-  - [Integrating with GitLab CI](#integrating-with-gitlab-ci)
-    - [CodeClimate GitLab CI Example](#codeclimate-gitlab-ci-example)
-    - [CodeClimate CLI Walkthrough](#codeclimate-cli-walkthrough)
-    - [Standalone Integration](#standalone-integration)
-- [Configuring Semgrep](#configuring-semgrep)
-  - [Sample CodeClimate Configuration](#sample-codeclimate-configuration)
-  - [Building the Docker Container](#building-the-docker-container)
-  - [Building a Slim Container](#building-a-slim-container)
-  - [Build Tools](#build-tools)
-- [Philosophy](#philosophy)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+  * [Standalone](#standalone)
+  * [Slim Build](#slim-build)
+  * [Versioning](#versioning)
+  * [Testing](#testing)
+* [Requirements](#requirements)
+  * [Development Requirements](#development-requirements)
+* [Examples](#examples)
+  * [Integrating with GitLab CI](#integrating-with-gitlab-ci)
+    * [CodeClimate GitLab CI Example](#codeclimate-gitlab-ci-example)
+    * [CodeClimate CLI Walkthrough](#codeclimate-cli-walkthrough)
+    * [Standalone Integration](#standalone-integration)
+* [Configuring Semgrep](#configuring-semgrep)
+  * [Sample CodeClimate Configuration](#sample-codeclimate-configuration)
+  * [Building the Docker Container](#building-the-docker-container)
+  * [Building a Slim Container](#building-a-slim-container)
+  * [Build Tools](#build-tools)
+* [Philosophy](#philosophy)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -109,7 +110,7 @@ This project is the home of a [Semgrep](https://semgrep.dev/) [CodeClimate](http
 
 If you are interested in using the tool and have no need for CodeClimate integration, you can get the `latest`, `slim`, and versioned images without CodeClimate-related code by removing the `codeclimate-` string from the image name. For example, if the image is named `megabytelabs/codeclimate-semgrep`, then you can get the same image without CodeClimate-related code by using the `megabytelabs/semgrep` image. For a full listing of images to choose from, check out the [DockerHub page for this project](https://hub.docker.com/r/megabytelabs/semgrep).
 
-_Note:_ The DockerHub page for the CodeClimate engine version of this project is located on the aforementioned DockerHub page and also on a [separate DockerHub page](https://hub.docker.com/r/megabytelabs/codeclimate-semgrep) prefixed with `codeclimate-`.
+*Note:* The DockerHub page for the CodeClimate engine version of this project is located on the aforementioned DockerHub page and also on a [separate DockerHub page](https://hub.docker.com/r/megabytelabs/codeclimate-semgrep) prefixed with `codeclimate-`.
 
 ### Slim Build
 
@@ -127,14 +128,14 @@ Multiple methods of testing are used to ensure both the `latest` and `slim` buil
 
 ## Requirements
 
-- **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
+* **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
 
 ### Development Requirements
 
-- **[DockerSlim](repository.project.dockerslim)** - Used for generating compact, secure images
-- **[jq](repository.project.jq)** - Used for interacting with JSON
-- **[Node.js](repository.project.node)** (_>=14.18_) - Utilized to add development features like a pre-commit hook and maintenance tasks
-- _Many more_ requirements that are _dynamically installed_ as they are needed by our `Taskfile.yml` via our custom [go-task/task](https://github.com/go-task/task) fork named **[Bodega](https://github.com/ProfessorManhattan/Bodega)**
+* **[DockerSlim](repository.project.dockerslim)** - Used for generating compact, secure images
+* **[jq](repository.project.jq)** - Used for interacting with JSON
+* **[Node.js](repository.project.node)** (*>=14.18*) - Utilized to add development features like a pre-commit hook and maintenance tasks
+* *Many more* requirements that are *dynamically installed* as they are needed by our `Taskfile.yml` via our custom [go-task/task](https://github.com/go-task/task) fork named **[Bodega](https://github.com/ProfessorManhattan/Bodega)**
 
 If you choose to utilize the development tools provided by this project then at some point you will have to run `bash start.sh` (or `npm i` which calls `bash start.sh` after it is done). The `start.sh` script will attempt to automatically install any requirements (without sudo) that are not already present on your build system to the user's `~/.local/bin` folder. The `start.sh` script also takes care of other tasks such as generating the documentation by calling tasks defined in the `Taskfile.yml`. For more details on how the optional requirements are used and set up, check out the [CONTRIBUTING.md](https://gitlab.com/megabyte-labs/docker/codeclimate/semgrep/-/blob/master/docs/CONTRIBUTING.md) guide.
 
@@ -160,7 +161,7 @@ semgrep() {
 }
 ```
 
-_Note: Some CLI tools run without any arguments passed in. For example, the CLI tool `ansible-lint` runs by simply entering `ansible-lint` in the terminal. Our Docker images default command is to show the version so to get around this quirk you would run `ansible-lint .`._
+*Note: Some CLI tools run without any arguments passed in. For example, the CLI tool `ansible-lint` runs by simply entering `ansible-lint` in the terminal. Our Docker images default command is to show the version so to get around this quirk you would run `ansible-lint .`.*
 
 ### Integrating with GitLab CI
 
@@ -277,7 +278,7 @@ If you come up with an improvement, please do [open a pull request](repository.g
 
 You might notice that we have a lot of extra files considering that this repository basically boils down to a single Dockerfile. These extra files are meant to make team development easier, predictable, and enjoyable. If you have a recent version of [Node.js](repository.project.node) installed, you can get started using our build tools by running `npm i` (or by running `bash start.sh` if you do not currently have Node.js installed) in the root of this repository. After that, you can run `task --list` to see a list of the available development features. Alternatively, you can run `task --menu` to view an interactive menu that will guide you through the development process.
 
-_Note:_ We use a custom-built version of [go-task/task](https://github.com/go-task/task) so if you already have it installed then you should either replace it with our version or use a different bin name for `task`.
+*Note:* We use a custom-built version of [go-task/task](https://github.com/go-task/task) so if you already have it installed then you should either replace it with our version or use a different bin name for `task`.
 
 For more details, check out the [CONTRIBUTING.md](https://gitlab.com/megabyte-labs/docker/codeclimate/semgrep/-/blob/master/CONTRIBUTING.md) file.
 
@@ -289,7 +290,7 @@ Utilizing Continuous Integration (CI) tools can improve developer efficiency dra
 
 This repository is home to the build instructions for a Docker container that is just one piece to the CI puzzle. Nearly all of [our CI pipeline Docker projects](https://gitlab.com/megabyte-labs/dockerfile/ci-pipeline) serve a single purpose.
 
-Instead of using one of the countless pretty_name public Docker images available, we create it in-house so we know exactly what code is present in the container. We also ensure that all of our CI pipeline images are as small as possible so that our CI environment can download and run the specific task as quickly as possible. Using this repository as a base, you too can easily create your own in-house CI pipeline container image.
+Instead of using one of the countless pretty\_name public Docker images available, we create it in-house so we know exactly what code is present in the container. We also ensure that all of our CI pipeline images are as small as possible so that our CI environment can download and run the specific task as quickly as possible. Using this repository as a base, you too can easily create your own in-house CI pipeline container image.
 
 At first glance, you might notice that there are many files in this repository. Nearly all the files and folders that have a period prepended to them are development configurations. The tools that these files and folders configure are meant to make development easier and faster. They are also meant to improve team development by forcing developers to follow strict standards so that the same design patterns are used across all of our repositories.
 
@@ -308,7 +309,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

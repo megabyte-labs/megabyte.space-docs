@@ -1,9 +1,10 @@
----
+***
+
 title: Semantic Release Config
 description: Bundles together an ambitious semantic-release shared configuration used across many project types
-editUrl: https://gitlab.com/megabyte-labs/npm/configs/release/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts
-sidebar_label: Semantic Release Config
+editUrl: <https://gitlab.com/megabyte-labs/npm/configs/release/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/npm/src/definitions.ts>
+sidebar\_label: Semantic Release Config
 githubUrl: 'https://github.com/megabyte-labs/semantic-release-config'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/npm/configs/release'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'semantic-release-config'
 packageSlug: 'release-config'
 packageVersion: '2.3.12'
 pyPiPackageName: 'release-config'
----
+---------------------------------
 
 <div align="center">
   <center>
@@ -77,12 +78,12 @@ pyPiPackageName: 'release-config'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Requirements](#requirements)
-  - [Developer Requirements](#developer-requirements)
-- [This Repository (Shared Common)](#this-repository-shared-common)
-- [Contributing](#contributing)
-- [License](#license)
+* [Overview](#overview)
+* [Requirements](#requirements)
+  * [Developer Requirements](#developer-requirements)
+* [This Repository (Shared Common)](#this-repository-shared-common)
+* [Contributing](#contributing)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -90,14 +91,14 @@ pyPiPackageName: 'release-config'
 
 [semantic-release](https://www.npmjs.com/package/semantic-release) automates the process of releasing software to a variety of eco-systems. This package bundles together the dependencies required for automatically releasing assets for the following project types:
 
-- **NPM**: Publishes to npmjs.org
-- **GitLab**: Publishes to GitLab Releases
-- **GitHub**: Publishes to GitHub Releases
-- **PyPi**: Publishes Python projects to pypi.org (`pyproject.toml` and `setup.py`/`setup.cfg` supported)
-- **Docker**: Publishes to DockerHub or a registry of your choice
-- **VagrantUp**: Builds VMs with Packer and then publishes them to VagrantUp
-- **Go**: Uses GitHub/GitLab Releases
-- **Ansible**: Publishes Ansible roles to Ansible Galaxy
+* **NPM**: Publishes to npmjs.org
+* **GitLab**: Publishes to GitLab Releases
+* **GitHub**: Publishes to GitHub Releases
+* **PyPi**: Publishes Python projects to pypi.org (`pyproject.toml` and `setup.py`/`setup.cfg` supported)
+* **Docker**: Publishes to DockerHub or a registry of your choice
+* **VagrantUp**: Builds VMs with Packer and then publishes them to VagrantUp
+* **Go**: Uses GitHub/GitLab Releases
+* **Ansible**: Publishes Ansible roles to Ansible Galaxy
 
 The configuration can be easily modified to accomodate your specific needs (like most semantic-release shared configurations). A good amount of the actual logic for verifying and compiling assets in this particular configuration is housed in our Taskfile.yml file. The [Taskfile.yml project](https://taskfile.dev/#/) is an incredibly useful project you should check out. It helps combine bash script snippets into useful flows, with dependency management and caching capabilities. We even created a more flavorful variant called **[Bodega](https://github.com/ProfessorManhattan/Bodega)**.
 
@@ -111,8 +112,8 @@ If you are simply including this library in your project, all you need is a rece
 
 The following versions of Node.js and Python are required for development:
 
-- **[Node.js >14.18.0](repository.project.node)**
-- **[Python >3.10.0](repository.project.python)**
+* **[Node.js >14.18.0](repository.project.node)**
+* **[Python >3.10.0](repository.project.python)**
 
 Other versions may work, but only the above versions are supported. Most development dependencies are installed automatically by our `Taskfile.yml` set-up (even Node.js and Python). Run `bash start.sh` to install **[Bodega](https://github.com/ProfessorManhattan/Bodega)** (an improved fork of [go-task](https://github.com/go-task/task)) and run the initialization sequence. The taskfiles will automatically install dependencies as they are needed, based on what development tasks you are running. For more information, check out the [CONTRIBUTING.md](https://github.com/megabyte-labs/semantic-release-config/blob/main/docs/CONTRIBUTING.md) or simply run:
 
@@ -143,7 +144,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

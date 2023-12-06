@@ -17,10 +17,10 @@ When developing anything in the Megabyte Labs eco-system, we do our best to adhe
 
 Some of the strategies we leverage are:
 
-* **Automation** - Whenever possible, automate and abstract technical details away from the developer / end-user.
-* **Style Guides** - Ensure you are adhereing to de-facto standard style guides for the type of code you are developing. *See the [Style Guide](/docs/philosophy/style-guides) page.*
-* **Linting** - Leverage code linters to ensure popular recommendations are utilized so that code developed by different developers ends up looking similar. *See the [Linting](/docs/philosophy/linting) page.*
-* **Git** - When committing code, ensure perfection by using properly formatted commit messages. When creating pull requests, ensure that the pull request message is formatted in such a way that it closes the issues it addreses. *See the [Contributing](/docs/contributing) section.*
+- **Automation** - Whenever possible, automate and abstract technical details away from the developer / end-user.
+- **Style Guides** - Ensure you are adhereing to de-facto standard style guides for the type of code you are developing. _See the [Style Guide](/docs/philosophy/style-guides) page._
+- **Linting** - Leverage code linters to ensure popular recommendations are utilized so that code developed by different developers ends up looking similar. _See the [Linting](/docs/philosophy/linting) page._
+- **Git** - When committing code, ensure perfection by using properly formatted commit messages. When creating pull requests, ensure that the pull request message is formatted in such a way that it closes the issues it addreses. _See the [Contributing](/docs/contributing) section._
 
 ## Repositories
 
@@ -30,10 +30,10 @@ The easiest way to browse through all our various projects is on [GitLab](https:
 
 As mentioned, we attempt to automate as much as possible. This includes tasks like:
 
-* Setting up a GitLab / GitHub repository for all our projects via APIs (when appropriate API token environment variables are set)
-* Auto-fixing files with ESLint and other auto-fixers
-* Setting up git hooks to perform tasks like linting files that have been changed in a commit
-* Automatically building README files by re-using documentation partials for sections that should be in every README file
+- Setting up a GitLab / GitHub repository for all our projects via APIs (when appropriate API token environment variables are set)
+- Auto-fixing files with ESLint and other auto-fixers
+- Setting up git hooks to perform tasks like linting files that have been changed in a commit
+- Automatically building README files by re-using documentation partials for sections that should be in every README file
 
 ### Documentation
 

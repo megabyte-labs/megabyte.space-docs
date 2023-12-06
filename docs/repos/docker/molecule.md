@@ -1,9 +1,10 @@
----
+***
+
 title: undefined
 description: Node.js files/configurations that support the creation of Dockerfiles
-editUrl: https://gitlab.com/megabyte-labs/docker/ci-pipeline/molecule/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/docker/src/definitions.ts
-sidebar_label: undefined
+editUrl: <https://gitlab.com/megabyte-labs/docker/ci-pipeline/molecule/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/docker/src/definitions.ts>
+sidebar\_label: undefined
 githubUrl: false
 gitlabUrl: false
 ansibleGalaxyProjectId: false
@@ -12,7 +13,8 @@ packageName: '@megabytelabs/molecule'
 packageSlug: false
 packageVersion: '0.1.1'
 pyPiPackageName: false
----
+
+***
 
 <div align="center">
   <center>
@@ -89,22 +91,20 @@ pyPiPackageName: false
 
 > </br><h3 align="center">**Node.js files/configurations that support the creation of Dockerfiles**</h3></br>
 
-
-
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#table-of-contents)
 
 ## ➤ Table of Contents
 
-- [➤ Overview](#-overview)
-- [➤ Requirements](#-requirements)
-  - [Optional Requirements](#optional-requirements)
-- [➤ Example Usage](#-example-usage)
-  - [Integrating with GitLab CI](#integrating-with-gitlab-ci)
-  - [Building the Docker Container](#building-the-docker-container)
-  - [Building a Slim Container](#building-a-slim-container)
-  - [Build Tools](#build-tools)
-- [➤ Contributing](#-contributing)
-- [➤ License](#-license)
+* [➤ Overview](#-overview)
+* [➤ Requirements](#-requirements)
+  * [Optional Requirements](#optional-requirements)
+* [➤ Example Usage](#-example-usage)
+  * [Integrating with GitLab CI](#integrating-with-gitlab-ci)
+  * [Building the Docker Container](#building-the-docker-container)
+  * [Building a Slim Container](#building-a-slim-container)
+  * [Build Tools](#build-tools)
+* [➤ Contributing](#-contributing)
+* [➤ License](#-license)
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#overview)
 
@@ -122,13 +122,13 @@ At first glance, you might notice that there are many files in this repository. 
 
 ## ➤ Requirements
 
-- **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
+* **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
 
 ### Optional Requirements
 
-- [DockerSlim](https://gitlab.com/megabyte-labs/ansible-roles/dockerslim) - Used for generating compact, secure images
-- [jq](https://gitlab.com/megabyte-labs/ansible-roles/jq) - Used by `.start.sh` to interact with JSON documents from the bash shell
-- [Node.js](https://gitlab.com/megabyte-labs/ansible-roles/nodejs) (_Version >=10_) - Utilized to add development features like a pre-commit hook and maintenance tasks
+* [DockerSlim](https://gitlab.com/megabyte-labs/ansible-roles/dockerslim) - Used for generating compact, secure images
+* [jq](https://gitlab.com/megabyte-labs/ansible-roles/jq) - Used by `.start.sh` to interact with JSON documents from the bash shell
+* [Node.js](https://gitlab.com/megabyte-labs/ansible-roles/nodejs) (*Version >=10*) - Utilized to add development features like a pre-commit hook and maintenance tasks
 
 If you choose to utilize the development tools provided by this project then at some point you will have to run `bash .start.sh` (or `npm i` which calls `bash .start.sh` after it is done). The `.start.sh` script will attempt to automatically install any requirements (without sudo) that are not already present on your build system to the user's `~/.local/bin` folder. The `.start.sh` script also takes care of other tasks such as generating the documentation. For more details on how the Optional Requirements are used and set up, check out the [CONTRIBUTING.md](https://gitlab.com/megabyte-labs/dockerfile/ci-pipeline/molecule/-/blob/master/CONTRIBUTING.md) guide.
 
@@ -152,7 +152,7 @@ molecule() {
 }
 ```
 
-_Note: Some CLI tools run without any arguments passed in. For example, the CLI tool `ansible-lint` runs by simply entering `ansible-lint` in the terminal. Our Docker images default command is to show the version so to get around this quirk you would run `ansible-lint .`._
+*Note: Some CLI tools run without any arguments passed in. For example, the CLI tool `ansible-lint` runs by simply entering `ansible-lint` in the terminal. Our Docker images default command is to show the version so to get around this quirk you would run `ansible-lint .`.*
 
 ### Integrating with GitLab CI
 
@@ -260,7 +260,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

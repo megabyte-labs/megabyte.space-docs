@@ -40,7 +40,7 @@ The documentation portal only accounts for the `/docs` section of the website. I
 1. First, clone the website source code. You can find this by finding the documentation's repository (by referring the link opened when you click, "Edit on GitHub") and replacing the ending of the repository with `-site` instead of `-docs`.
 2. Next, clone the `-docs` repository into a folder inside the root of the `-site` repository named `docs`.
 3. Then, run `npm run build:production`. This will build the documentation production build first and then build the main site, while including the documentation files into the final bundle.
-4. Finally, if you want to deploy the site to Firebase, then you can deploy the site by running `firebase deploy`. *Note: This requires Firebase permission that either needs to be shared or with a property that you own in your own Firebase account, for testing or cloning purposes.*
+4. Finally, if you want to deploy the site to Firebase, then you can deploy the site by running `firebase deploy`. _Note: This requires Firebase permission that either needs to be shared or with a property that you own in your own Firebase account, for testing or cloning purposes._
 
 ## Cloning Our Site
 

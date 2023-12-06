@@ -53,8 +53,8 @@ After ensuring your images are compressed and properly sized, you should include
 
 ```html
 <picture>
-  <source srcset="img/image.webp" type="image/webp">
-  <img src="img/image.jpg" alt="Alt Text!" width="100" height="100">
+  <source srcset="img/image.webp" type="image/webp" />
+  <img src="img/image.jpg" alt="Alt Text!" width="100" height="100" />
 </picture>
 ```
 
@@ -67,21 +67,25 @@ If possible, leverage responsive images (i.e. create images at multiple sizes th
 ```html
 <picture>
   <!-- load webp images if supported -->
-  <source type="image/webp"
+  <source
+    type="image/webp"
     srcset="
       https://images.ctfassets.net/.../paris.jpg?w=100&fm=webp 100w,
       https://images.ctfassets.net/.../paris.jpg?w=200&fm=webp 200w,
-      ..."
+      ...
+    "
     sizes="
       (max-width: 768px) calc(100vw - 3em),
       (max-width: 1376px) calc(50vw - 8em),
-      550px">
+      550px"
+  />
   <!-- load traditional supported image format -->
   <img
     srcset="
       https://images.ctfassets.net/.../paris.jpg?w=100&fm=jpg&fl=progressive 100w,
       https://images.ctfassets.net/.../paris.jpg?w=200&fm=jpg&fl=progressive 200w,
-      ..."
+      ...
+    "
     sizes="
       (max-width: 768px) calc(100vw - 3em),
       (max-width: 1376px) calc(50vw - 8em),
@@ -91,7 +95,8 @@ If possible, leverage responsive images (i.e. create images at multiple sizes th
     loading="lazy"
     decoding="async"
     width="1243"
-    height="1500">
+    height="1500"
+  />
 </picture>
 ```
 
@@ -111,7 +116,7 @@ Include videos specifying both a source for `webm` and `mp4`. The following is a
 
 ```html
 <video autoplay loop muted playsinline>
-  <source src="/video/github-feature-request.mp4" type="video/mp4">
-  <source src="/video/github-feature-request.webm" type="video/webm">
+  <source src="/video/github-feature-request.mp4" type="video/mp4" />
+  <source src="/video/github-feature-request.webm" type="video/webm" />
 </video>
 ```

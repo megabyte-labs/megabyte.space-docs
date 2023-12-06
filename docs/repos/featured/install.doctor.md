@@ -1,9 +1,10 @@
----
+***
+
 title: undefined
 description: A glorious combination of application / theme settings and a performant cross-platform, desktop-oriented software suite.
-editUrl: https://gitlab.com/megabyte-labs/install.doctor/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/featured/src/definitions.ts
-sidebar_label: undefined
+editUrl: <https://gitlab.com/megabyte-labs/install.doctor/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/featured/src/definitions.ts>
+sidebar\_label: undefined
 githubUrl: 'https://github.com/megabyte-labs/install.doctor'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/install.doctor'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: '@mblabs/install-doctor'
 packageSlug: 'install-doctor'
 packageVersion: '0.0.1'
 pyPiPackageName: 'install-doctor'
----
+---------------------------------
 
 <div align="center">
   <center>
@@ -53,21 +54,21 @@ pyPiPackageName: 'install-doctor'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Quick Start](#quick-start)
-  - [Quick Start Notes](#quick-start-notes)
-- [Chezmoi-Based](#chezmoi-based)
-- [Security Focused](#security-focused)
-- [Cross-Platform](#cross-platform)
-  - [Custom Software Provisioning System](#custom-software-provisioning-system)
-  - [Beautiful Anywhere](#beautiful-anywhere)
-  - [Qubes Support](#qubes-support)
-- [Gas Station](#gas-station)
-- [Chezmoi](#chezmoi)
-  - [Resetting Chezmoi](#resetting-chezmoi)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Quick Start](#quick-start)
+  * [Quick Start Notes](#quick-start-notes)
+* [Chezmoi-Based](#chezmoi-based)
+* [Security Focused](#security-focused)
+* [Cross-Platform](#cross-platform)
+  * [Custom Software Provisioning System](#custom-software-provisioning-system)
+  * [Beautiful Anywhere](#beautiful-anywhere)
+  * [Qubes Support](#qubes-support)
+* [Gas Station](#gas-station)
+* [Chezmoi](#chezmoi)
+  * [Resetting Chezmoi](#resetting-chezmoi)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -90,28 +91,22 @@ Sexy Start is a cross-platform development environment provisioning system. The 
 
 To provision your workstation, you can run the following which will install some basic dependencies (e.g. Chezmoi) and provide interactive prompts where you can personalize your configuration:
 
-```
-bash <(curl -sSL https://install.doctor/start)
-```
+    bash <(curl -sSL https://install.doctor/start)
 
 If you fork this repository and would like to use your fork as the source, you can still use the command shown above by setting the `START_REPO` environment variable. If it is located on GitHub, you can do this by running:
 
-```
-START_REPO=my-gh-user/my-fork-name bash <(curl -sSL https://install.doctor/start)
-```
+    START_REPO=my-gh-user/my-fork-name bash <(curl -sSL https://install.doctor/start)
 
 Alternatively, if you want to host your project on GitLab or another git provider, then just specify the git remote's URL:
 
-```
-START_REPO=git@gitlab.com:megabyte-labs/install.doctor.git bash <(curl -sSL https://install.doctor/start)
-```
+    START_REPO=git@gitlab.com:megabyte-labs/install.doctor.git bash <(curl -sSL https://install.doctor/start)
 
 ### Quick Start Notes
 
-- The quick start script is tested on the latest versions of Archlinux, CentOS, Debian, Fedora, macOS, and Ubuntu
-- The quick start script is the preferred method of using this project to provision your system
-- The script can be configured to be completely headless by specifying environment variables which are detailed below
-- _Windows support is on the roadmap._
+* The quick start script is tested on the latest versions of Archlinux, CentOS, Debian, Fedora, macOS, and Ubuntu
+* The quick start script is the preferred method of using this project to provision your system
+* The script can be configured to be completely headless by specifying environment variables which are detailed below
+* *Windows support is on the roadmap.*
 
 <a href="#chezmoi-based" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -133,7 +128,7 @@ This software was built in an adversarial environment. This led towards a focus 
 
 ## Cross-Platform
 
-This project has been developed with support for Archlinux, CentOS, Fedora, macOS, Ubuntu, and Windows. Almost all the testing has been done on x86_64 systems but the system is flexible enough to be adapted for other systems such as ARM or FreeBSD. A lot of effort has also gone into supporting Qubes which, when fully provisioned, is basically a combination of all the operating systems we have developed this project for.
+This project has been developed with support for Archlinux, CentOS, Fedora, macOS, Ubuntu, and Windows. Almost all the testing has been done on x86\_64 systems but the system is flexible enough to be adapted for other systems such as ARM or FreeBSD. A lot of effort has also gone into supporting Qubes which, when fully provisioned, is basically a combination of all the operating systems we have developed this project for.
 
 ### Custom Software Provisioning System
 
@@ -165,9 +160,7 @@ This script is designed to run only the code that is necessary to improve perfor
 
 If there is an error during the provision process or you make changes that are not being run during the provision process then you might want to clear Chezmoi's cache and configuration. This can be done on macOS/Linux by running:
 
-```
-rm -rf ~/.config/chezmoi && rm -rf ~/.cache/chezmoi
-```
+    rm -rf ~/.config/chezmoi && rm -rf ~/.cache/chezmoi
 
 <a href="#contributing" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -184,7 +177,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

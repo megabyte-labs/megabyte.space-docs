@@ -1,9 +1,10 @@
----
+***
+
 title: LatestOS
-description: A Python CLI that acquires direct links to operating system&#x27;s ISO installers
-editUrl: https://gitlab.com/megabyte-labs/python/cli/latestos/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/python/src/definitions.ts
-sidebar_label: LatestOS
+description: A Python CLI that acquires direct links to operating system's ISO installers
+editUrl: <https://gitlab.com/megabyte-labs/python/cli/latestos/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/python/src/definitions.ts>
+sidebar\_label: LatestOS
 githubUrl: 'https://github.com/megabyte-labs/latestos'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/python/cli/latestos'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,7 @@ packageName: 'latestos'
 packageSlug: 'latestos'
 packageVersion: '0.0.1'
 pyPiPackageName: 'latestos'
----
+---------------------------
 
 <div align="center">
   <center>
@@ -80,20 +81,20 @@ pyPiPackageName: 'latestos'
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Options](#options)
-- [Installation](#installation)
-  - [PyPi](#pypi)
-  - [Install Doctor](#install-doctor)
-  - [Homebrew](#homebrew)
-  - [Chocolatey](#chocolatey)
-  - [Binary Releases](#binary-releases)
-- [Requirements](#requirements)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Overview](#overview)
+* [Usage](#usage)
+* [Examples](#examples)
+* [Options](#options)
+* [Installation](#installation)
+  * [PyPi](#pypi)
+  * [Install Doctor](#install-doctor)
+  * [Homebrew](#homebrew)
+  * [Chocolatey](#chocolatey)
+  * [Binary Releases](#binary-releases)
+* [Requirements](#requirements)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#overview" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
@@ -135,13 +136,13 @@ latestos ubuntu template.json ls .
 
 This CLI currently checks the following options/distros:
 
-- arch
-- ubuntu
-- fedora
-- centos
-- debian
-- raspbian
-- windows insiders preview
+* arch
+* ubuntu
+* fedora
+* centos
+* debian
+* raspbian
+* windows insiders preview
 
 **Windows Insiders Preview**
 
@@ -235,7 +236,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

@@ -1,9 +1,10 @@
----
+***
+
 title: undefined
 description: The Docker-based, DevContainer development environment for multi-language projects
-editUrl: https://gitlab.com/megabyte-labs/docker/software/devcontainer/blob/master/docs/GUIDE.md
-editApiUrl: https://github.com/ionic-team/capacitor-plugins/blob/main/docker/src/definitions.ts
-sidebar_label: undefined
+editUrl: <https://gitlab.com/megabyte-labs/docker/software/devcontainer/blob/master/docs/GUIDE.md>
+editApiUrl: <https://github.com/ionic-team/capacitor-plugins/blob/main/docker/src/definitions.ts>
+sidebar\_label: undefined
 githubUrl: 'https://github.com/megabyte-labs/docker-devcontainer'
 gitlabUrl: 'https://gitlab.com/megabyte-labs/docker/software/devcontainer'
 ansibleGalaxyProjectId: false
@@ -12,7 +13,8 @@ packageName: '@megabytelabs/devcontainer'
 packageSlug: 'devcontainer'
 packageVersion: '0.0.1'
 pyPiPackageName: 'devcontainer'
----
+
+***
 
 <div align="center">
   <center>
@@ -77,27 +79,27 @@ pyPiPackageName: 'devcontainer'
 
 ## Table of Contents
 
-- [Requirements](#requirements)
-  - [Development Requirements](#development-requirements)
-  - [Building the Docker Container](#building-the-docker-container)
-  - [Building a Slim Container](#building-a-slim-container)
-  - [Build Tools](#build-tools)
-- [Contributing](#contributing)
-  - [Affiliates](#affiliates)
-- [License](#license)
+* [Requirements](#requirements)
+  * [Development Requirements](#development-requirements)
+  * [Building the Docker Container](#building-the-docker-container)
+  * [Building a Slim Container](#building-a-slim-container)
+  * [Build Tools](#build-tools)
+* [Contributing](#contributing)
+  * [Affiliates](#affiliates)
+* [License](#license)
 
 <a href="#requirements" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
 ## Requirements
 
-- **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
+* **[Docker](https://gitlab.com/megabyte-labs/ansible-roles/docker)**
 
 ### Development Requirements
 
-- **[DockerSlim](repository.project.dockerslim)** - Used for generating compact, secure images
-- **[jq](repository.project.jq)** - Used for interacting with JSON
-- **[Node.js](repository.project.node)** (_>=14.18_) - Utilized to add development features like a pre-commit hook and maintenance tasks
-- _Many more_ requirements that are _dynamically installed_ as they are needed by our `Taskfile.yml` via our custom [go-task/task](https://github.com/go-task/task) fork named **[Bodega](https://github.com/ProfessorManhattan/Bodega)**
+* **[DockerSlim](repository.project.dockerslim)** - Used for generating compact, secure images
+* **[jq](repository.project.jq)** - Used for interacting with JSON
+* **[Node.js](repository.project.node)** (*>=14.18*) - Utilized to add development features like a pre-commit hook and maintenance tasks
+* *Many more* requirements that are *dynamically installed* as they are needed by our `Taskfile.yml` via our custom [go-task/task](https://github.com/go-task/task) fork named **[Bodega](https://github.com/ProfessorManhattan/Bodega)**
 
 If you choose to utilize the development tools provided by this project then at some point you will have to run `bash start.sh` (or `npm i` which calls `bash start.sh` after it is done). The `start.sh` script will attempt to automatically install any requirements (without sudo) that are not already present on your build system to the user's `~/.local/bin` folder. The `start.sh` script also takes care of other tasks such as generating the documentation by calling tasks defined in the `Taskfile.yml`. For more details on how the optional requirements are used and set up, check out the [CONTRIBUTING.md](https://gitlab.com/megabyte-labs/docker/software/devcontainer/-/blob/master/docs/CONTRIBUTING.md) guide.
 
@@ -142,7 +144,7 @@ If you come up with an improvement, please do [open a pull request](repository.g
 
 You might notice that we have a lot of extra files considering that this repository basically boils down to a single Dockerfile. These extra files are meant to make team development easier, predictable, and enjoyable. If you have a recent version of [Node.js](repository.project.node) installed, you can get started using our build tools by running `npm i` (or by running `bash start.sh` if you do not currently have Node.js installed) in the root of this repository. After that, you can run `task --list` to see a list of the available development features. Alternatively, you can run `task --menu` to view an interactive menu that will guide you through the development process.
 
-_Note:_ We use a custom-built version of [go-task/task](https://github.com/go-task/task) so if you already have it installed then you should either replace it with our version or use a different bin name for `task`.
+*Note:* We use a custom-built version of [go-task/task](https://github.com/go-task/task) so if you already have it installed then you should either replace it with our version or use a different bin name for `task`.
 
 For more details, check out the [CONTRIBUTING.md](https://gitlab.com/megabyte-labs/docker/software/devcontainer/-/blob/master/CONTRIBUTING.md) file.
 
@@ -161,7 +163,7 @@ Dear Awesome Person,<br/><br/>
 I create open source projects out of love. Although I have a job, shelter, and as much fast food as I can handle, it would still be pretty cool to be appreciated by the community for something I have spent a lot of time and money on. Please consider sponsoring me! Who knows? Maybe I will be able to quit my job and publish open source full time.
 <br/><br/>Sincerely,<br/><br/>
 
-**_Brian Zalewski_**<br/><br/>
+***Brian Zalewski***<br/><br/>
 
 </blockquote>
 

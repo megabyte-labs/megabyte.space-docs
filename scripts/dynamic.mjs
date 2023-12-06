@@ -140,12 +140,11 @@ editApiUrl: ${editApiUrl}
 sidebar_label: ${sidebarLabel}
 githubUrl: ${pkgJson.blueprint && pkgJson.blueprint.repository && pkgJson.blueprint.repository.github ? `'${pkgJson.blueprint.repository.github}'` : false}
 gitlabUrl: ${pkgJson.blueprint && pkgJson.blueprint.repository && pkgJson.blueprint.repository.gitlab ? `'${pkgJson.blueprint.repository.gitlab}'` : false}
-ansibleGalaxyProjectId: ${pkgJson.blueprint && pkgJson.blueprint.ansible_galaxy_project_id ? `'${pkgJson.blueprint.ansible_galaxy_project_id}'` : false}
-packageGroup: ${pkgJson.blueprint && pkgJson.blueprint.group ? `'${pkgJson.blueprint.group}'` : false}
-packageName: '${pkgJson.name}'
-packageSlug: ${pkgJson.blueprint && pkgJson.blueprint.slug ? `'${pkgJson.blueprint.slug}'` : false}
-packageVersion: ${pkgJson.version ? `'${pkgJson.version}'` : false}
-pyPiPackageName: ${pkgJson.blueprint && pkgJson.blueprint.customPyPiPackageName ? `'${pkgJson.blueprint.customPyPiPackageName}'` : (pkgJson.blueprint && pkgJson.blueprint.slug ? `'${pkgJson.blueprint.slug}'` : false)}
+ansibleGalaxyProjectId: ${pkgJson.blueprint && pkgJson.blueprint.ansibleGalaxyProjectId ? `'${pkgJson.blueprint.ansibleGalaxyProjectId}'` : false}
+group: ${pkgJson.blueprint && pkgJson.blueprint.group ? `'${pkgJson.blueprint.group}'` : false}
+name: '${pkgJson.name}'
+version: ${pkgJson.version ? `'${pkgJson.version}'` : false}
+namePyPi: ${pkgJson.blueprint && pkgJson.blueprint.namePyPi ? `'${pkgJson.blueprint.namePyPi}'` : (pkgJson.blueprint && pkgJson.blueprint.name ? `'${pkgJson.blueprint.name}'` : false)}
 ---
 
 ${readme}`.trim();
